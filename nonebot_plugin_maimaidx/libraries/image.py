@@ -149,9 +149,12 @@ def text_to_bytes_io(text: str) -> BytesIO:
     return bio
 
 
-def image_to_base64(img: Image.Image, format='PNG') -> str:
+def image_to_base64(img: Image.Image, format='JPEG') -> str:
     output_buffer = BytesIO()
-    img.save(output_buffer, format)
+    if format == 'JPEG':
+        img.convert("RGB").save(output_buffer, format, quality=50)
+    else:
+        img.save(output_buffer, format, quality=50)
     byte_data = output_buffer.getvalue()
     base64_str = base64.b64encode(byte_data).decode()
     return 'base64://' + base64_str
