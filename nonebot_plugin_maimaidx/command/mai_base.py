@@ -8,14 +8,14 @@ from ..libraries.maimaidx_player_score import *
 from ..libraries.maimaidx_update_plate import *
 from ..libraries.tool import qqhash
 
-update_data         = on_command('更新maimai数据', permission=SUPERUSER)
-maimaidxhelp        = on_command('帮助maimaiDX', aliases={'帮助maimaidx'})
-maimaidxrepo        = on_command('项目地址maimaiDX', aliases={'项目地址maimaidx'})
-mai_today           = on_command('今日mai', aliases={'今日舞萌', '今日运势'})
-mai_what            = on_regex(r'.*mai.*什么(.+)?')
-random_song         = on_regex(r'^[随来给]个((?:dx|sd|标准))?([绿黄红紫白]?)([0-9]+\+?).*')
-rating_ranking      = on_command('查看排名', aliases={'查看排行'})
-my_rating_ranking   = on_command('我的排名')
+update_data = on_command('更新maimai数据', permission=SUPERUSER)
+maimaidxhelp = on_command('帮助maimaiDX', aliases={'帮助maimaidx'})
+maimaidxrepo = on_command('项目地址maimaiDX', aliases={'项目地址maimaidx'})
+mai_today = on_command('今日mai', aliases={'今日舞萌', '今日运势'})
+mai_what = on_regex(r'.*mai.*什么(.+)?')
+random_song = on_regex(r'^[随来给]个((?:dx|sd|标准))?([绿黄红紫白]?)(\d+\.\d)?(\d{1,2}\+?)?.*')
+rating_ranking = on_command('查看排名', aliases={'查看排行'})
+my_rating_ranking = on_command('我的排名')
 
 
 @update_data.handle()
@@ -30,7 +30,7 @@ async def _():
     await maimaidxhelp.finish(
         MessageSegment.image(
             image_to_base64(Image.open(Root / 'maimaidxhelp.png'))
-        ), 
+        ),
         reply_message=True
     )
 
@@ -38,7 +38,7 @@ async def _():
 @maimaidxrepo.handle()
 async def _():
     await maimaidxrepo.finish(
-        '项目地址：https://github.com/Yuri-YuzuChaN/nonebot-plugin-maimaidx\n求star，求宣传~', 
+        '项目地址：https://github.com/Yuri-YuzuChaN/nonebot-plugin-maimaidx\n求star，求宣传~',
         reply_message=True
     )
 
@@ -46,16 +46,16 @@ async def _():
 @mai_today.handle()
 async def _(event: MessageEvent):
     wm_list = [
-        '拼机', 
-        '推分', 
-        '越级', 
-        '下埋', 
-        '夜勤', 
-        '练底力', 
-        '练手法', 
-        '打旧框', 
-        '干饭', 
-        '抓绝赞', 
+        '拼机',
+        '推分',
+        '越级',
+        '下埋',
+        '夜勤',
+        '练底力',
+        '练手法',
+        '打旧框',
+        '干饭',
+        '抓绝赞',
         '收歌'
     ]
     h = qqhash(event.user_id)
@@ -80,7 +80,7 @@ async def _(event: MessageEvent):
 
 
 @mai_what.handle()
-async def _(event: MessageEvent, match = RegexMatched()):
+async def _(event: MessageEvent, match=RegexMatched()):
     music = mai.total_list.random()
     user = None
     if (point := match.group(1)) and ('推分' in point or '上分' in point or '加分' in point):
@@ -110,7 +110,7 @@ async def _(event: MessageEvent, match = RegexMatched()):
 
 
 @random_song.handle()
-async def _(match = RegexMatched()):
+async def _(match=RegexMatched()):
     try:
         diff = match.group(1)
         if diff == 'dx':
@@ -119,14 +119,23 @@ async def _(match = RegexMatched()):
             tp = ['SD']
         else:
             tp = ['SD', 'DX']
-        level = match.group(3)
+        float_level = match.group(3)
+        level = match.group(4)
+        ds = None
+        if float_level is not None:
+            ds = float(float_level)
+            levels = float_level.split(".")
+            level = levels[0]
+            if len(levels) > 1 and (levels[1] == "7" or levels[1] == "8" or levels[1] == "9"):
+                level += "+"
         if match.group(2) == '':
-            music_data = mai.total_list.filter(level=level, type=tp)
+            music_data = mai.total_list.filter(level=level, type=tp, ds=ds)
         else:
             music_data = mai.total_list.filter(
-                level=level, 
-                diff=['绿黄红紫白'.index(match.group(2))], 
-                type=tp
+                level=level,
+                diff=['绿黄红紫白'.index(match.group(2))],
+                type=tp,
+                ds=ds
             )
         if len(music_data) == 0:
             msg = '没有这样的乐曲哦。'
@@ -146,7 +155,7 @@ async def _(message: Message = CommandArg()):
         page = int(args)
     else:
         name = args.lower()
-    
+
     pic = await rating_ranking_data(name, page)
     await rating_ranking.finish(pic, reply_message=True)
 
