@@ -84,3 +84,6 @@
 ## 指令
 
 ![img](https://raw.githubusercontent.com/Yuri-YuzuChaN/nonebot-plugin-maimaidx/master/nonebot_plugin_maimaidx/maimaidxhelp.png)
+
+## 额外添加功能
+随个xx支持具体定数(例:"随个13.6","随个紫13.4")
