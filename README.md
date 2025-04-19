@@ -86,5 +86,6 @@
 ![img](https://raw.githubusercontent.com/Yuri-YuzuChaN/nonebot-plugin-maimaidx/master/nonebot_plugin_maimaidx/maimaidxhelp.png)
 
 ## 额外添加功能
-随个xx支持具体定数(例:"随个13.6","随个紫13.4")
-image.py/image_to_base64 将图像质量降低到50%来节省服务器流量
+1. 随个xx支持具体定数(例:"随个13.6","随个紫13.4") 
+2. image.py/image_to_base64 将图像质量降低到50%来节省服务器流量 
+3. 删除了ginfo指令,懒的配PhantomJS 
