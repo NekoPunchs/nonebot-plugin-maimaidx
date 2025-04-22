@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<MusicGroupData xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <dataName>MusicGroup006112</dataName>
+  <name>
+    <id>6112</id>
+    <str>橙</str>
+  </name>
+  <MusicIds>
+    <list>
+      <StringID>
+        <id>228</id>
+        <str>Dreampainter</str>
+      </StringID>
+      <StringID>
+        <id>244</id>
+        <str>おても☆Yan</str>
+      </StringID>
+      <StringID>
+        <id>295</id>
+        <str>緋色のDance</str>
+      </StringID>
+      <StringID>
+        <id>296</id>
+        <str>明星ロケット</str>
+      </StringID>
+      <StringID>
+        <id>297</id>
+        <str>The Great Journey</str>
+      </StringID>
+      <StringID>
+        <id>314</id>
+        <str>Cosmic Magic Shooter</str>
+      </StringID>
+      <StringID>
+        <id>331</id>
+        <str>Heart Beats</str>
+      </StringID>
+      <StringID>
+        <id>349</id>
+        <str>ピーマンたべたら</str>
+      </StringID>
+      <StringID>
+        <id>351</id>
+        <str>MIRROR of MAGIC</str>
+      </StringID>
+      <StringID>
+        <id>352</id>
+        <str>究極焼肉レストラン！お燐の地獄亭！</str>
+      </StringID>
+      <StringID>
+        <id>353</id>
+        <str>shake it!</str>
+      </StringID>
+      <StringID>
+        <id>362</id>
+        <str>BETTER CHOICE</str>
+      </StringID>
+      <StringID>
+        <id>366</id>
+        <str>oboro</str>
+      </StringID>
+      <StringID>
+        <id>367</id>
+        <str>Dragoon</str>
+      </StringID>
+      <StringID>
+        <id>374</id>
+        <str>アンハッピーリフレイン</str>
+      </StringID>
+      <StringID>
+        <id>375</id>
+        <str>One Step Ahead</str>
+      </StringID>
+      <StringID>
+        <id>378</id>
+        <str>planet dancer</str>
+      </StringID>
+      <StringID>
+        <id>379</id>
+        <str>Caliburne ～Story of the Legendary sword～</str>
+      </StringID>
+      <StringID>
+        <id>381</id>
+        <str>B.B.K.K.B.K.K.</str>
+      </StringID>
+      <StringID>
+        <id>382</id>
+        <str>おこちゃま戦争</str>
+      </StringID>
+      <StringID>
+        <id>383</id>
+        <str>Link</str>
+      </StringID>
+      <StringID>
+        <id>384</id>
+        <str>VERTeX</str>
+      </StringID>
+      <StringID>
+        <id>385</id>
+        <str>Ignis Danse</str>
+      </StringID>
+      <StringID>
+        <id>386</id>
+        <str>Scars of FAUNA</str>
+      </StringID>
+      <StringID>
+        <id>387</id>
+        <str>FUJIN Rumble</str>
+      </StringID>
+      <StringID>
+        <id>388</id>
+        <str>きたさいたま2000</str>
+      </StringID>
+      <StringID>
+        <id>389</id>
+        <str>FLOWER</str>
+      </StringID>
+      <StringID>
+        <id>390</id>
+        <str>Got more raves？</str>
+      </StringID>
+      <StringID>
+        <id>399</id>
+        <str>不毛！</str>
+      </StringID>
+    </list>
+  </MusicIds>
+</MusicGroupData>

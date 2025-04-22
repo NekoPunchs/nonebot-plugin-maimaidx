@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<MusicGroupData xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <dataName>MusicGroup006144</dataName>
+  <name>
+    <id>6144</id>
+    <str>輝</str>
+  </name>
+  <MusicIds>
+    <list>
+      <StringID>
+        <id>564</id>
+        <str>ENJOY POLIS</str>
+      </StringID>
+      <StringID>
+        <id>717</id>
+        <str>ラブって♡ジュエリー♪えんじぇる☆ブレイク！！</str>
+      </StringID>
+      <StringID>
+        <id>752</id>
+        <str>true my heart -Lovable mix-</str>
+      </StringID>
+      <StringID>
+        <id>789</id>
+        <str>ネ！コ！</str>
+      </StringID>
+      <StringID>
+        <id>791</id>
+        <str>ロールプレイングゲーム</str>
+      </StringID>
+      <StringID>
+        <id>793</id>
+        <str>ロキ</str>
+      </StringID>
+      <StringID>
+        <id>794</id>
+        <str>Money Money</str>
+      </StringID>
+      <StringID>
+        <id>796</id>
+        <str>極圏</str>
+      </StringID>
+      <StringID>
+        <id>797</id>
+        <str>Scarlet Lance</str>
+      </StringID>
+      <StringID>
+        <id>798</id>
+        <str>セイクリッド　ルイン</str>
+      </StringID>
+      <StringID>
+        <id>799</id>
+        <str>QZKago Requiem</str>
+      </StringID>
+      <StringID>
+        <id>800</id>
+        <str>EVERGREEN</str>
+      </StringID>
+      <StringID>
+        <id>802</id>
+        <str>不思議の国のクリスマス</str>
+      </StringID>
+      <StringID>
+        <id>803</id>
+        <str>Schwarzschild</str>
+      </StringID>
+      <StringID>
+        <id>806</id>
+        <str>ナイトメア☆パーティーナイト</str>
+      </StringID>
+      <StringID>
+        <id>809</id>
+        <str>結ンデ開イテ羅刹ト骸</str>
+      </StringID>
+      <StringID>
+        <id>812</id>
+        <str>Alea jacta est!</str>
+      </StringID>
+      <StringID>
+        <id>815</id>
+        <str>L4TS:2018 (feat. あひる &amp; KTA)</str>
+      </StringID>
+      <StringID>
+        <id>816</id>
+        <str>クレイジークレイジーダンサーズ</str>
+      </StringID>
+      <StringID>
+        <id>817</id>
+        <str>【東方ニコカラ】秘神マターラ feat.魂音泉【IOSYS】</str>
+      </StringID>
+      <StringID>
+        <id>818</id>
+        <str>隠然</str>
+      </StringID>
+      <StringID>
+        <id>819</id>
+        <str>White Traveling Girl</str>
+      </StringID>
+      <StringID>
+        <id>820</id>
+        <str>FFT</str>
+      </StringID>
+      <StringID>
+        <id>821</id>
+        <str>-OutsideR:RequieM-</str>
+      </StringID>
+      <StringID>
+        <id>822</id>
+        <str>イロトリドリのメロディ</str>
+      </StringID>
+      <StringID>
+        <id>823</id>
+        <str>奏者はただ背中と提琴で語るのみ</str>
+      </StringID>
+      <StringID>
+        <id>825</id>
+        <str>雷切-RAIKIRI-</str>
+      </StringID>
+      <StringID>
+        <id>829</id>
+        <str>敗北の少年</str>
+      </StringID>
+      <StringID>
+        <id>830</id>
+        <str>立ち入り禁止</str>
+      </StringID>
+      <StringID>
+        <id>832</id>
+        <str>命ばっかり</str>
+      </StringID>
+      <StringID>
+        <id>833</id>
+        <str>the EmpErroR</str>
+      </StringID>
+      <StringID>
+        <id>834</id>
+        <str>PANDORA PARADOXXX</str>
+      </StringID>
+      <StringID>
+        <id>835</id>
+        <str>Believe the Rainbow</str>
+      </StringID>
+      <StringID>
+        <id>836</id>
+        <str>Good Bye, Mr. Jack</str>
+      </StringID>
+      <StringID>
+        <id>837</id>
+        <str>Altale</str>
+      </StringID>
+      <StringID>
+        <id>838</id>
+        <str>最終鬼畜妹フランドール・S</str>
+      </StringID>
+      <StringID>
+        <id>839</id>
+        <str>ネクロファンタジア～Arr.Demetori</str>
+      </StringID>
+      <StringID>
+        <id>840</id>
+        <str>Imperishable Night 2006 (2016 Refine)</str>
+      </StringID>
+      <StringID>
+        <id>841</id>
+        <str>終点</str>
+      </StringID>
+      <StringID>
+        <id>842</id>
+        <str>WORLD'S END UMBRELLA</str>
+      </StringID>
+      <StringID>
+        <id>844</id>
+        <str>End Time</str>
+      </StringID>
+      <StringID>
+        <id>848</id>
+        <str>魔法少女になるしかねぇ</str>
+      </StringID>
+      <StringID>
+        <id>849</id>
+        <str>Kattobi KEIKYU Rider</str>
+      </StringID>
+      <StringID>
+        <id>850</id>
+        <str>B.M.S.</str>
+      </StringID>
+      <StringID>
+        <id>852</id>
+        <str>TiamaT:F minor</str>
+      </StringID>
+    </list>
+  </MusicIds>
+</MusicGroupData>

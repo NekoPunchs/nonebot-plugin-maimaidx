@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<MusicGroupData xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <dataName>MusicGroup006124</dataName>
+  <name>
+    <id>6124</id>
+    <str>櫻</str>
+  </name>
+  <MusicIds>
+    <list>
+      <StringID>
+        <id>431</id>
+        <str>Contrapasso -paradiso-</str>
+      </StringID>
+      <StringID>
+        <id>461</id>
+        <str>無敵We are one!!</str>
+      </StringID>
+      <StringID>
+        <id>467</id>
+        <str>儚きもの人間</str>
+      </StringID>
+      <StringID>
+        <id>490</id>
+        <str>Infantoon Fantasy</str>
+      </StringID>
+      <StringID>
+        <id>492</id>
+        <str>Jumble Rumble</str>
+      </StringID>
+      <StringID>
+        <id>494</id>
+        <str>CITRUS MONSTER</str>
+      </StringID>
+      <StringID>
+        <id>495</id>
+        <str>Hyper Active</str>
+      </StringID>
+      <StringID>
+        <id>496</id>
+        <str>AMAZING MIGHTYYYY!!!!</str>
+      </StringID>
+      <StringID>
+        <id>497</id>
+        <str>fake!fake!</str>
+      </StringID>
+      <StringID>
+        <id>506</id>
+        <str>セハガガガンバッちゃう！！</str>
+      </StringID>
+      <StringID>
+        <id>507</id>
+        <str>キミノヨゾラ哨戒班</str>
+      </StringID>
+      <StringID>
+        <id>508</id>
+        <str>恋愛裁判</str>
+      </StringID>
+      <StringID>
+        <id>511</id>
+        <str>パーフェクト生命</str>
+      </StringID>
+      <StringID>
+        <id>517</id>
+        <str>東京リアルワールド</str>
+      </StringID>
+      <StringID>
+        <id>518</id>
+        <str>やめろ！聴くな！</str>
+      </StringID>
+      <StringID>
+        <id>520</id>
+        <str>木彫り鯰と右肩ゾンビ</str>
+      </StringID>
+      <StringID>
+        <id>521</id>
+        <str>ECHO</str>
+      </StringID>
+      <StringID>
+        <id>526</id>
+        <str>brilliant better</str>
+      </StringID>
+      <StringID>
+        <id>527</id>
+        <str>ハート・ビート</str>
+      </StringID>
+      <StringID>
+        <id>528</id>
+        <str>Invitation</str>
+      </StringID>
+      <StringID>
+        <id>529</id>
+        <str>connecting with you</str>
+      </StringID>
+      <StringID>
+        <id>530</id>
+        <str>高気圧ねこロック</str>
+      </StringID>
+      <StringID>
+        <id>531</id>
+        <str>Prophesy One</str>
+      </StringID>
+      <StringID>
+        <id>532</id>
+        <str>洗脳</str>
+      </StringID>
+      <StringID>
+        <id>533</id>
+        <str>Barbed Eye</str>
+      </StringID>
+      <StringID>
+        <id>534</id>
+        <str>Nitrous Fury</str>
+      </StringID>
+      <StringID>
+        <id>536</id>
+        <str>月に叢雲華に風</str>
+      </StringID>
+      <StringID>
+        <id>537</id>
+        <str>No Routine</str>
+      </StringID>
+      <StringID>
+        <id>538</id>
+        <str>ひれ伏せ愚民どもっ！</str>
+      </StringID>
+      <StringID>
+        <id>539</id>
+        <str>エテルニタス・ルドロジー</str>
+      </StringID>
+      <StringID>
+        <id>542</id>
+        <str>METATRON</str>
+      </StringID>
+      <StringID>
+        <id>543</id>
+        <str>終わりなき物語</str>
+      </StringID>
+    </list>
+  </MusicIds>
+</MusicGroupData>

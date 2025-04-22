@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<MusicGroupData xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <dataName>MusicGroup006104</dataName>
+  <name>
+    <id>6104</id>
+    <str>超</str>
+  </name>
+  <MusicIds>
+    <list>
+      <StringID>
+        <id>115</id>
+        <str>DADDY MULK -Groove remix-</str>
+      </StringID>
+      <StringID>
+        <id>184</id>
+        <str>I ♥</str>
+      </StringID>
+      <StringID>
+        <id>186</id>
+        <str>イアイア★ナイトオブデザイア</str>
+      </StringID>
+      <StringID>
+        <id>187</id>
+        <str>ローリンガール</str>
+      </StringID>
+      <StringID>
+        <id>188</id>
+        <str>天ノ弱</str>
+      </StringID>
+      <StringID>
+        <id>191</id>
+        <str>脳漿炸裂ガール</str>
+      </StringID>
+      <StringID>
+        <id>193</id>
+        <str>セツナトリップ</str>
+      </StringID>
+      <StringID>
+        <id>194</id>
+        <str>放課後ストライド</str>
+      </StringID>
+      <StringID>
+        <id>198</id>
+        <str>カゲロウデイズ</str>
+      </StringID>
+      <StringID>
+        <id>199</id>
+        <str>チルノのパーフェクトさんすう教室</str>
+      </StringID>
+      <StringID>
+        <id>200</id>
+        <str>Bad Apple!! feat nomico</str>
+      </StringID>
+      <StringID>
+        <id>201</id>
+        <str>魔理沙は大変なものを盗んでいきました</str>
+      </StringID>
+      <StringID>
+        <id>202</id>
+        <str>Grip &amp; Break down !!</str>
+      </StringID>
+      <StringID>
+        <id>203</id>
+        <str>Help me, ERINNNNNN!!</str>
+      </StringID>
+      <StringID>
+        <id>204</id>
+        <str>ナイト・オブ・ナイツ</str>
+      </StringID>
+      <StringID>
+        <id>205</id>
+        <str>全人類ノ非想天則</str>
+      </StringID>
+      <StringID>
+        <id>206</id>
+        <str>しゅわスパ大作戦☆</str>
+      </StringID>
+      <StringID>
+        <id>207</id>
+        <str>時空を超えて久しぶり！</str>
+      </StringID>
+      <StringID>
+        <id>208</id>
+        <str>Her Dream Is To Be A Fantastic Sorceress</str>
+      </StringID>
+      <StringID>
+        <id>209</id>
+        <str>ココロスキャンのうた</str>
+      </StringID>
+      <StringID>
+        <id>212</id>
+        <str>神室雪月花</str>
+      </StringID>
+      <StringID>
+        <id>213</id>
+        <str>KONNANじゃないっ！</str>
+      </StringID>
+      <StringID>
+        <id>214</id>
+        <str>awake</str>
+      </StringID>
+      <StringID>
+        <id>216</id>
+        <str>Mysterious Destiny</str>
+      </StringID>
+      <StringID>
+        <id>217</id>
+        <str>Riders Of The Light</str>
+      </StringID>
+      <StringID>
+        <id>218</id>
+        <str>Terminal Storm</str>
+      </StringID>
+      <StringID>
+        <id>219</id>
+        <str>記憶、記録</str>
+      </StringID>
+      <StringID>
+        <id>220</id>
+        <str>セガサターン起動音[H.][Remix]</str>
+      </StringID>
+      <StringID>
+        <id>223</id>
+        <str>夜咄ディセイブ</str>
+      </StringID>
+      <StringID>
+        <id>224</id>
+        <str>ウサテイ</str>
+      </StringID>
+      <StringID>
+        <id>226</id>
+        <str>Blew Moon</str>
+      </StringID>
+      <StringID>
+        <id>227</id>
+        <str>Garakuta Doll Play</str>
+      </StringID>
+      <StringID>
+        <id>237</id>
+        <str>Pixel Voyage</str>
+      </StringID>
+      <StringID>
+        <id>238</id>
+        <str>Get Happy</str>
+      </StringID>
+      <StringID>
+        <id>239</id>
+        <str>System “Z”</str>
+      </StringID>
+      <StringID>
+        <id>240</id>
+        <str>Beat of getting entangled</str>
+      </StringID>
+      <StringID>
+        <id>241</id>
+        <str>Cosmic Train</str>
+      </StringID>
+      <StringID>
+        <id>246</id>
+        <str>maiム・maiム feat.週刊少年マガジン</str>
+      </StringID>
+      <StringID>
+        <id>248</id>
+        <str>Backyun! －悪い女－</str>
+      </StringID>
+      <StringID>
+        <id>252</id>
+        <str>みんなのマイマイマー</str>
+      </StringID>
+      <StringID>
+        <id>253</id>
+        <str>円舞曲、君に</str>
+      </StringID>
+      <StringID>
+        <id>255</id>
+        <str>Burning Hearts ～炎のANGEL～</str>
+      </StringID>
+      <StringID>
+        <id>256</id>
+        <str>いーあるふぁんくらぶ</str>
+      </StringID>
+      <StringID>
+        <id>258</id>
+        <str>Nyan Cat EX</str>
+      </StringID>
+      <StringID>
+        <id>259</id>
+        <str>ぽっぴっぽー</str>
+      </StringID>
+      <StringID>
+        <id>260</id>
+        <str>LUCIA</str>
+      </StringID>
+      <StringID>
+        <id>261</id>
+        <str>Death Scythe</str>
+      </StringID>
+      <StringID>
+        <id>262</id>
+        <str>BREAK YOU!!</str>
+      </StringID>
+      <StringID>
+        <id>263</id>
+        <str>JUMPIN' JUMPIN'</str>
+      </StringID>
+      <StringID>
+        <id>264</id>
+        <str>L'épilogue</str>
+      </StringID>
+      <StringID>
+        <id>265</id>
+        <str>Save This World νMIX</str>
+      </StringID>
+      <StringID>
+        <id>266</id>
+        <str>Living Universe</str>
+      </StringID>
+      <StringID>
+        <id>267</id>
+        <str>Ignite Infinity</str>
+      </StringID>
+      <StringID>
+        <id>268</id>
+        <str>トルコ行進曲 - オワタ＼(^o^)／</str>
+      </StringID>
+      <StringID>
+        <id>269</id>
+        <str>裏表ラバーズ</str>
+      </StringID>
+    </list>
+  </MusicIds>
+</MusicGroupData>

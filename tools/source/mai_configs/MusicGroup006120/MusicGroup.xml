@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<MusicGroupData xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <dataName>MusicGroup006120</dataName>
+  <name>
+    <id>6120</id>
+    <str>桃</str>
+  </name>
+  <MusicIds>
+    <list>
+      <StringID>
+        <id>359</id>
+        <str>YU-MU</str>
+      </StringID>
+      <StringID>
+        <id>360</id>
+        <str>物凄い勢いでけーねが物凄いうた</str>
+      </StringID>
+      <StringID>
+        <id>411</id>
+        <str>初音ミクの消失</str>
+      </StringID>
+      <StringID>
+        <id>412</id>
+        <str>イノコリ先生</str>
+      </StringID>
+      <StringID>
+        <id>424</id>
+        <str>橙の幻想郷音頭</str>
+      </StringID>
+      <StringID>
+        <id>425</id>
+        <str>東方妖々夢 ～the maximum moving about～</str>
+      </StringID>
+      <StringID>
+        <id>426</id>
+        <str>蒼空に舞え、墨染の桜</str>
+      </StringID>
+      <StringID>
+        <id>427</id>
+        <str>少女幻葬戦慄曲 ～ Necro Fantasia</str>
+      </StringID>
+      <StringID>
+        <id>434</id>
+        <str>フラグメンツ -T.V. maimai edit-</str>
+      </StringID>
+      <StringID>
+        <id>435</id>
+        <str>願いを呼ぶ季節</str>
+      </StringID>
+      <StringID>
+        <id>446</id>
+        <str>GEMINI -M-</str>
+      </StringID>
+      <StringID>
+        <id>447</id>
+        <str>+♂</str>
+      </StringID>
+      <StringID>
+        <id>448</id>
+        <str>ありふれたせかいせいふく</str>
+      </StringID>
+      <StringID>
+        <id>453</id>
+        <str>Garden Of The Dragon</str>
+      </StringID>
+      <StringID>
+        <id>454</id>
+        <str>After Burner</str>
+      </StringID>
+      <StringID>
+        <id>456</id>
+        <str>Glorious Crown</str>
+      </StringID>
+      <StringID>
+        <id>457</id>
+        <str>言ノ葉遊戯</str>
+      </StringID>
+      <StringID>
+        <id>458</id>
+        <str>りばーぶ</str>
+      </StringID>
+      <StringID>
+        <id>459</id>
+        <str>幾四音-Ixion-</str>
+      </StringID>
+      <StringID>
+        <id>462</id>
+        <str>7thSense</str>
+      </StringID>
+      <StringID>
+        <id>463</id>
+        <str>FEEL the BEATS</str>
+      </StringID>
+      <StringID>
+        <id>464</id>
+        <str>Revive The Rave</str>
+      </StringID>
+      <StringID>
+        <id>465</id>
+        <str>スリップフリップ</str>
+      </StringID>
+      <StringID>
+        <id>466</id>
+        <str>Jimang Shot</str>
+      </StringID>
+      <StringID>
+        <id>468</id>
+        <str>ラブリー☆えんじぇる!!</str>
+      </StringID>
+      <StringID>
+        <id>471</id>
+        <str>オモイヨシノ</str>
+      </StringID>
+      <StringID>
+        <id>472</id>
+        <str>アージェントシンメトリー</str>
+      </StringID>
+      <StringID>
+        <id>480</id>
+        <str>HIMITSUスパーク</str>
+      </StringID>
+      <StringID>
+        <id>482</id>
+        <str>Party 4U ”holy nite mix”</str>
+      </StringID>
+      <StringID>
+        <id>483</id>
+        <str>囲い無き世は一期の月影</str>
+      </StringID>
+    </list>
+  </MusicIds>
+</MusicGroupData>

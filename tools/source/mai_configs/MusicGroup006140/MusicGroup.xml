@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<MusicGroupData xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <dataName>MusicGroup006140</dataName>
+  <name>
+    <id>6140</id>
+    <str>雪</str>
+  </name>
+  <MusicIds>
+    <list>
+      <StringID>
+        <id>650</id>
+        <str>Let's Go Away</str>
+      </StringID>
+      <StringID>
+        <id>732</id>
+        <str>LOVE EAST</str>
+      </StringID>
+      <StringID>
+        <id>733</id>
+        <str>Fist Bump</str>
+      </StringID>
+      <StringID>
+        <id>734</id>
+        <str>ENERGY SYNERGY MATRIX</str>
+      </StringID>
+      <StringID>
+        <id>735</id>
+        <str>Session High⤴</str>
+      </StringID>
+      <StringID>
+        <id>736</id>
+        <str>World Vanquisher</str>
+      </StringID>
+      <StringID>
+        <id>737</id>
+        <str>FestivaLight</str>
+      </StringID>
+      <StringID>
+        <id>738</id>
+        <str>Brain Power</str>
+      </StringID>
+      <StringID>
+        <id>739</id>
+        <str>進め！イッスン軍団 -Rebellion of the Dwarfs-</str>
+      </StringID>
+      <StringID>
+        <id>740</id>
+        <str>ULTRA B+K</str>
+      </StringID>
+      <StringID>
+        <id>741</id>
+        <str>インビジブル</str>
+      </StringID>
+      <StringID>
+        <id>742</id>
+        <str>彗星ハネムーン</str>
+      </StringID>
+      <StringID>
+        <id>745</id>
+        <str>keep hopping</str>
+      </StringID>
+      <StringID>
+        <id>746</id>
+        <str>larva</str>
+      </StringID>
+      <StringID>
+        <id>750</id>
+        <str>初音ミクの激唱</str>
+      </StringID>
+      <StringID>
+        <id>753</id>
+        <str>Rodeo Machine</str>
+      </StringID>
+      <StringID>
+        <id>756</id>
+        <str>CYBER Sparks</str>
+      </StringID>
+      <StringID>
+        <id>757</id>
+        <str>Xevel</str>
+      </StringID>
+      <StringID>
+        <id>758</id>
+        <str>INFINITE WORLD</str>
+      </StringID>
+      <StringID>
+        <id>759</id>
+        <str>サドマミホリック</str>
+      </StringID>
+      <StringID>
+        <id>760</id>
+        <str>Ragnarok</str>
+      </StringID>
+      <StringID>
+        <id>762</id>
+        <str>このピアノでお前を8759632145回ぶん殴る</str>
+      </StringID>
+      <StringID>
+        <id>763</id>
+        <str>はやくそれになりたい！</str>
+      </StringID>
+      <StringID>
+        <id>764</id>
+        <str>フィクサー</str>
+      </StringID>
+      <StringID>
+        <id>765</id>
+        <str>みんなの</str>
+      </StringID>
+      <StringID>
+        <id>766</id>
+        <str>アマノジャクリバース feat. ｙｔｒ</str>
+      </StringID>
+      <StringID>
+        <id>767</id>
+        <str>進捗どうですか？</str>
+      </StringID>
+      <StringID>
+        <id>768</id>
+        <str>Help me, あーりん！</str>
+      </StringID>
+      <StringID>
+        <id>769</id>
+        <str>なるとなぎのパーフェクトロックンロール教室</str>
+      </StringID>
+      <StringID>
+        <id>770</id>
+        <str>あねぺったん</str>
+      </StringID>
+      <StringID>
+        <id>771</id>
+        <str>We Gonna Journey</str>
+      </StringID>
+      <StringID>
+        <id>772</id>
+        <str>FREEDOM DiVE (tpz Overcute Remix)</str>
+      </StringID>
+      <StringID>
+        <id>773</id>
+        <str>SILENT BLUE</str>
+      </StringID>
+      <StringID>
+        <id>775</id>
+        <str>ジンギスカン</str>
+      </StringID>
+      <StringID>
+        <id>776</id>
+        <str>にじよめちゃん体操第一億</str>
+      </StringID>
+      <StringID>
+        <id>777</id>
+        <str>花と、雪と、ドラムンベース。</str>
+      </StringID>
+      <StringID>
+        <id>778</id>
+        <str>Conquista Ciela</str>
+      </StringID>
+      <StringID>
+        <id>779</id>
+        <str>怒槌</str>
+      </StringID>
+      <StringID>
+        <id>781</id>
+        <str>Seyana. ～何でも言うことを聞いてくれるアカネチャン～</str>
+      </StringID>
+      <StringID>
+        <id>782</id>
+        <str>おねがいダーリン</str>
+      </StringID>
+      <StringID>
+        <id>786</id>
+        <str>My First Phone</str>
+      </StringID>
+    </list>
+  </MusicIds>
+</MusicGroupData>

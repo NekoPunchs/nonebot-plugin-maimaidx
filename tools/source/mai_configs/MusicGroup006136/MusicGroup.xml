@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<MusicGroupData xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <dataName>MusicGroup006136</dataName>
+  <name>
+    <id>6136</id>
+    <str>白</str>
+  </name>
+  <MusicIds>
+    <list>
+      <StringID>
+        <id>540</id>
+        <str>泡沫、哀のまほろば</str>
+      </StringID>
+      <StringID>
+        <id>586</id>
+        <str>永遠のメロディ</str>
+      </StringID>
+      <StringID>
+        <id>642</id>
+        <str>Justified</str>
+      </StringID>
+      <StringID>
+        <id>643</id>
+        <str>Excalibur ～Revived resolution～</str>
+      </StringID>
+      <StringID>
+        <id>670</id>
+        <str>ドーナツホール</str>
+      </StringID>
+      <StringID>
+        <id>672</id>
+        <str>MilK</str>
+      </StringID>
+      <StringID>
+        <id>673</id>
+        <str>咲キ誇レ常世ノ華</str>
+      </StringID>
+      <StringID>
+        <id>674</id>
+        <str>Magical Flavor</str>
+      </StringID>
+      <StringID>
+        <id>680</id>
+        <str>Candy Tall Woman</str>
+      </StringID>
+      <StringID>
+        <id>681</id>
+        <str>Signature</str>
+      </StringID>
+      <StringID>
+        <id>682</id>
+        <str>人生リセットボタン</str>
+      </StringID>
+      <StringID>
+        <id>683</id>
+        <str>しねばいいのに</str>
+      </StringID>
+      <StringID>
+        <id>684</id>
+        <str>もうみんなしねばいいのに</str>
+      </StringID>
+      <StringID>
+        <id>689</id>
+        <str>Credits</str>
+      </StringID>
+      <StringID>
+        <id>690</id>
+        <str>ダンスロボットダンス</str>
+      </StringID>
+      <StringID>
+        <id>691</id>
+        <str>アルカリレットウセイ</str>
+      </StringID>
+      <StringID>
+        <id>692</id>
+        <str>ドクハク</str>
+      </StringID>
+      <StringID>
+        <id>693</id>
+        <str>キレキャリオン</str>
+      </StringID>
+      <StringID>
+        <id>694</id>
+        <str>猫祭り</str>
+      </StringID>
+      <StringID>
+        <id>695</id>
+        <str>TRUST</str>
+      </StringID>
+      <StringID>
+        <id>696</id>
+        <str>Still</str>
+      </StringID>
+      <StringID>
+        <id>699</id>
+        <str>天狗の落とし文 feat. ｙｔｒ</str>
+      </StringID>
+      <StringID>
+        <id>700</id>
+        <str>疾走あんさんぶる</str>
+      </StringID>
+      <StringID>
+        <id>701</id>
+        <str>Doll Judgment</str>
+      </StringID>
+      <StringID>
+        <id>702</id>
+        <str>WARNING×WARNING×WARNING</str>
+      </StringID>
+      <StringID>
+        <id>704</id>
+        <str>SPILL OVER COLORS</str>
+      </StringID>
+      <StringID>
+        <id>705</id>
+        <str>Mare Maris</str>
+      </StringID>
+      <StringID>
+        <id>706</id>
+        <str>シャルル</str>
+      </StringID>
+      <StringID>
+        <id>707</id>
+        <str>フリィダム ロリィタ</str>
+      </StringID>
+      <StringID>
+        <id>708</id>
+        <str>バレリーコ</str>
+      </StringID>
+      <StringID>
+        <id>709</id>
+        <str>アウターサイエンス</str>
+      </StringID>
+      <StringID>
+        <id>710</id>
+        <str>REVIVER オルタンシア・サーガ -蒼の騎士団- オリジナルVer.</str>
+      </StringID>
+      <StringID>
+        <id>711</id>
+        <str>拝啓ドッペルゲンガー</str>
+      </StringID>
+      <StringID>
+        <id>713</id>
+        <str>Kinda Way</str>
+      </StringID>
+      <StringID>
+        <id>719</id>
+        <str>エンドマークに希望と涙を添えて</str>
+      </StringID>
+      <StringID>
+        <id>720</id>
+        <str>ナンセンス文学</str>
+      </StringID>
+      <StringID>
+        <id>721</id>
+        <str>Bang Babang Bang!!!</str>
+      </StringID>
+      <StringID>
+        <id>722</id>
+        <str>Tic Tac DREAMIN’</str>
+      </StringID>
+      <StringID>
+        <id>723</id>
+        <str>SPICY SWINGY STYLE</str>
+      </StringID>
+      <StringID>
+        <id>725</id>
+        <str>砂の惑星 feat. HATSUNE MIKU</str>
+      </StringID>
+      <StringID>
+        <id>726</id>
+        <str>アンノウン・マザーグース</str>
+      </StringID>
+    </list>
+  </MusicIds>
+</MusicGroupData>

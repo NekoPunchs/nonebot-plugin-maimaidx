@@ -1,0 +1,7 @@
+{
+  "static_path": "/www/md_bot/plugins/nonebot_plugin_maimaidx/static",
+  "cover_path": "/www/md_bot/plugins/nonebot_plugin_maimaidx/static/mai/cover",
+  "plate_path": "/www/md_bot/plugins/nonebot_plugin_maimaidx/static/mai/plate",
+  "pic_path": "/www/md_bot/plugins/nonebot_plugin_maimaidx/static/mai/pic",
+  "rating_path": "/www/md_bot/plugins/nonebot_plugin_maimaidx/static/mai/rating"
+}

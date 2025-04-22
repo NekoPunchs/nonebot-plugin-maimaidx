@@ -1,0 +1,352 @@
+<?xml version="1.0" encoding="utf-8"?>
+<MusicGroupData xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <dataName>MusicGroup006101</dataName>
+  <name>
+    <id>6101</id>
+    <str>真</str>
+  </name>
+  <MusicIds>
+    <list>
+      <StringID>
+        <id>8</id>
+        <str>True Love Song</str>
+      </StringID>
+      <StringID>
+        <id>9</id>
+        <str>Color My World</str>
+      </StringID>
+      <StringID>
+        <id>17</id>
+        <str>Future</str>
+      </StringID>
+      <StringID>
+        <id>18</id>
+        <str>Love You</str>
+      </StringID>
+      <StringID>
+        <id>22</id>
+        <str>In Chaos</str>
+      </StringID>
+      <StringID>
+        <id>23</id>
+        <str>Crush On You</str>
+      </StringID>
+      <StringID>
+        <id>24</id>
+        <str>Sun Dance</str>
+      </StringID>
+      <StringID>
+        <id>25</id>
+        <str>Sweets×Sweets</str>
+      </StringID>
+      <StringID>
+        <id>27</id>
+        <str>Love or Lies</str>
+      </StringID>
+      <StringID>
+        <id>30</id>
+        <str>ネコ日和。</str>
+      </StringID>
+      <StringID>
+        <id>31</id>
+        <str>虹と太陽</str>
+      </StringID>
+      <StringID>
+        <id>35</id>
+        <str>炭★坑★節</str>
+      </StringID>
+      <StringID>
+        <id>38</id>
+        <str>NIGHT OF FIRE</str>
+      </StringID>
+      <StringID>
+        <id>40</id>
+        <str>come again</str>
+      </StringID>
+      <StringID>
+        <id>42</id>
+        <str>jelly</str>
+      </StringID>
+      <StringID>
+        <id>46</id>
+        <str>ルカルカ★ナイトフィーバー</str>
+      </StringID>
+      <StringID>
+        <id>47</id>
+        <str>源平大戦絵巻テーマソング</str>
+      </StringID>
+      <StringID>
+        <id>53</id>
+        <str>美しく燃える森</str>
+      </StringID>
+      <StringID>
+        <id>56</id>
+        <str>ウッーウッーウマウマ(ﾟ∀ﾟ)</str>
+      </StringID>
+      <StringID>
+        <id>58</id>
+        <str>Endless World</str>
+      </StringID>
+      <StringID>
+        <id>61</id>
+        <str>Beat Of Mind</str>
+      </StringID>
+      <StringID>
+        <id>62</id>
+        <str>檄！帝国華撃団(改)</str>
+      </StringID>
+      <StringID>
+        <id>63</id>
+        <str>メランコリック</str>
+      </StringID>
+      <StringID>
+        <id>64</id>
+        <str>教えて!! 魔法のLyric</str>
+      </StringID>
+      <StringID>
+        <id>65</id>
+        <str>ZIGG-ZAGG</str>
+      </StringID>
+      <StringID>
+        <id>66</id>
+        <str>ワールズエンド・ダンスホール</str>
+      </StringID>
+      <StringID>
+        <id>67</id>
+        <str>パンダヒーロー</str>
+      </StringID>
+      <StringID>
+        <id>68</id>
+        <str>オレンジの夏</str>
+      </StringID>
+      <StringID>
+        <id>69</id>
+        <str>BaBan!! －甘い罠－</str>
+      </StringID>
+      <StringID>
+        <id>71</id>
+        <str>マトリョシカ</str>
+      </StringID>
+      <StringID>
+        <id>73</id>
+        <str>メグメグ☆ファイアーエンドレスナイト</str>
+      </StringID>
+      <StringID>
+        <id>75</id>
+        <str>天国と地獄</str>
+      </StringID>
+      <StringID>
+        <id>76</id>
+        <str>きみのためなら死ねる</str>
+      </StringID>
+      <StringID>
+        <id>77</id>
+        <str>怪盗Rのテーマ</str>
+      </StringID>
+      <StringID>
+        <id>78</id>
+        <str>マリアをはげませ</str>
+      </StringID>
+      <StringID>
+        <id>79</id>
+        <str>SHOW TIME</str>
+      </StringID>
+      <StringID>
+        <id>80</id>
+        <str>City Escape: Act1</str>
+      </StringID>
+      <StringID>
+        <id>81</id>
+        <str>Rooftop Run: Act1</str>
+      </StringID>
+      <StringID>
+        <id>82</id>
+        <str>Reach For The Stars</str>
+      </StringID>
+      <StringID>
+        <id>83</id>
+        <str>Urban Crusher [Remix]</str>
+      </StringID>
+      <StringID>
+        <id>84</id>
+        <str>Catch The Future</str>
+      </StringID>
+      <StringID>
+        <id>85</id>
+        <str>JACKY [Remix]</str>
+      </StringID>
+      <StringID>
+        <id>100</id>
+        <str>Tell Your World</str>
+      </StringID>
+      <StringID>
+        <id>101</id>
+        <str>おちゃめ機能</str>
+      </StringID>
+      <StringID>
+        <id>102</id>
+        <str>ダンシング☆サムライ</str>
+      </StringID>
+      <StringID>
+        <id>106</id>
+        <str>BAD∞END∞NIGHT</str>
+      </StringID>
+      <StringID>
+        <id>107</id>
+        <str>ロミオとシンデレラ</str>
+      </StringID>
+      <StringID>
+        <id>108</id>
+        <str>Sweetiex2</str>
+      </StringID>
+      <StringID>
+        <id>109</id>
+        <str>腐れ外道とチョコレゐト</str>
+      </StringID>
+      <StringID>
+        <id>110</id>
+        <str>Quartet Theme [Reborn]</str>
+      </StringID>
+      <StringID>
+        <id>111</id>
+        <str>Sky High [Reborn]</str>
+      </StringID>
+      <StringID>
+        <id>112</id>
+        <str>Like the Wind [Reborn]</str>
+      </StringID>
+      <StringID>
+        <id>113</id>
+        <str>YA･DA･YO [Reborn]</str>
+      </StringID>
+      <StringID>
+        <id>114</id>
+        <str>Space Harrier Main Theme [Reborn]</str>
+      </StringID>
+      <StringID>
+        <id>116</id>
+        <str>ぴぴぱぷぅ！</str>
+      </StringID>
+      <StringID>
+        <id>117</id>
+        <str>炎歌 -ほむらうた-</str>
+      </StringID>
+      <StringID>
+        <id>118</id>
+        <str>犬日和。</str>
+      </StringID>
+      <StringID>
+        <id>119</id>
+        <str>ソーラン☆節</str>
+      </StringID>
+      <StringID>
+        <id>120</id>
+        <str>デコボコ体操第二</str>
+      </StringID>
+      <StringID>
+        <id>121</id>
+        <str>スイートマジック</str>
+      </StringID>
+      <StringID>
+        <id>122</id>
+        <str>ゴーゴー幽霊船</str>
+      </StringID>
+      <StringID>
+        <id>128</id>
+        <str>御旗のもとに</str>
+      </StringID>
+      <StringID>
+        <id>130</id>
+        <str>FEEL ALIVE</str>
+      </StringID>
+      <StringID>
+        <id>131</id>
+        <str>Link</str>
+      </StringID>
+      <StringID>
+        <id>132</id>
+        <str>Turn around</str>
+      </StringID>
+      <StringID>
+        <id>133</id>
+        <str>We Gonna Party</str>
+      </StringID>
+      <StringID>
+        <id>134</id>
+        <str>Night Fly</str>
+      </StringID>
+      <StringID>
+        <id>135</id>
+        <str>Feel My Fire</str>
+      </StringID>
+      <StringID>
+        <id>136</id>
+        <str>Streak</str>
+      </StringID>
+      <StringID>
+        <id>137</id>
+        <str>Spin me harder</str>
+      </StringID>
+      <StringID>
+        <id>138</id>
+        <str>Lionheart</str>
+      </StringID>
+      <StringID>
+        <id>139</id>
+        <str>Acceleration</str>
+      </StringID>
+      <StringID>
+        <id>140</id>
+        <str>Sprintrances</str>
+      </StringID>
+      <StringID>
+        <id>141</id>
+        <str>Nerverakes</str>
+      </StringID>
+      <StringID>
+        <id>142</id>
+        <str>Black Out</str>
+      </StringID>
+      <StringID>
+        <id>143</id>
+        <str>Fragrance</str>
+      </StringID>
+      <StringID>
+        <id>144</id>
+        <str>air's gravity</str>
+      </StringID>
+      <StringID>
+        <id>145</id>
+        <str>Starlight Disco</str>
+      </StringID>
+      <StringID>
+        <id>147</id>
+        <str>地上の戦士</str>
+      </StringID>
+      <StringID>
+        <id>152</id>
+        <str>超絶！Superlative</str>
+      </StringID>
+      <StringID>
+        <id>153</id>
+        <str>采配の刻 Power of order</str>
+      </StringID>
+      <StringID>
+        <id>154</id>
+        <str>DO RORO DERODERO ON DO RORO</str>
+      </StringID>
+      <StringID>
+        <id>155</id>
+        <str>泣き虫O'clock</str>
+      </StringID>
+      <StringID>
+        <id>157</id>
+        <str>Natural Flow</str>
+      </StringID>
+      <StringID>
+        <id>159</id>
+        <str>maimaiちゃんのテーマ</str>
+      </StringID>
+    </list>
+  </MusicIds>
+</MusicGroupData>

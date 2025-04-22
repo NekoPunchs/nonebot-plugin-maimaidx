@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<MusicGroupData xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <dataName>MusicGroup006108</dataName>
+  <name>
+    <id>6108</id>
+    <str>檄</str>
+  </name>
+  <MusicIds>
+    <list>
+      <StringID>
+        <id>225</id>
+        <str>sweet little sister</str>
+      </StringID>
+      <StringID>
+        <id>229</id>
+        <str>ぐるぐるWASH！コインランドリー・ディスコ</str>
+      </StringID>
+      <StringID>
+        <id>230</id>
+        <str>CYCLES</str>
+      </StringID>
+      <StringID>
+        <id>231</id>
+        <str>Heartbeats</str>
+      </StringID>
+      <StringID>
+        <id>232</id>
+        <str>Life Feels Good</str>
+      </StringID>
+      <StringID>
+        <id>233</id>
+        <str>MYTHOS</str>
+      </StringID>
+      <StringID>
+        <id>234</id>
+        <str>End of Twilight</str>
+      </StringID>
+      <StringID>
+        <id>235</id>
+        <str>火炎地獄</str>
+      </StringID>
+      <StringID>
+        <id>247</id>
+        <str>Danza zandA</str>
+      </StringID>
+      <StringID>
+        <id>251</id>
+        <str>Monochrome Rainbow</str>
+      </StringID>
+      <StringID>
+        <id>254</id>
+        <str>Live &amp; Learn</str>
+      </StringID>
+      <StringID>
+        <id>270</id>
+        <str>Outlaw's Lullaby</str>
+      </StringID>
+      <StringID>
+        <id>271</id>
+        <str>Brand-new Japanesque</str>
+      </StringID>
+      <StringID>
+        <id>278</id>
+        <str>レッツゴー!陰陽師</str>
+      </StringID>
+      <StringID>
+        <id>282</id>
+        <str>からくりピエロ</str>
+      </StringID>
+      <StringID>
+        <id>285</id>
+        <str>magician's operation</str>
+      </StringID>
+      <StringID>
+        <id>290</id>
+        <str>リリリリ★バーニングナイト</str>
+      </StringID>
+      <StringID>
+        <id>291</id>
+        <str>ハロ／ハワユ</str>
+      </StringID>
+      <StringID>
+        <id>298</id>
+        <str>お嫁にしなさいっ！</str>
+      </StringID>
+      <StringID>
+        <id>301</id>
+        <str>患部で止まってすぐ溶ける～狂気の優曇華院</str>
+      </StringID>
+      <StringID>
+        <id>303</id>
+        <str>Endless, Sleepless Night</str>
+      </StringID>
+      <StringID>
+        <id>305</id>
+        <str>POP STAR</str>
+      </StringID>
+      <StringID>
+        <id>308</id>
+        <str>Back 2 Back</str>
+      </StringID>
+      <StringID>
+        <id>309</id>
+        <str>神々の祈り</str>
+      </StringID>
+      <StringID>
+        <id>310</id>
+        <str>エピクロスの虹はもう見えない</str>
+      </StringID>
+      <StringID>
+        <id>311</id>
+        <str>シアワセうさぎ</str>
+      </StringID>
+      <StringID>
+        <id>313</id>
+        <str>待チ人ハ来ズ。</str>
+      </StringID>
+      <StringID>
+        <id>315</id>
+        <str>深海少女</str>
+      </StringID>
+      <StringID>
+        <id>316</id>
+        <str>M.S.S.Planet</str>
+      </StringID>
+      <StringID>
+        <id>319</id>
+        <str>幻想のサテライト</str>
+      </StringID>
+      <StringID>
+        <id>320</id>
+        <str>最速最高シャッターガール</str>
+      </StringID>
+      <StringID>
+        <id>321</id>
+        <str>バラライカ</str>
+      </StringID>
+      <StringID>
+        <id>322</id>
+        <str>林檎華憐歌</str>
+      </StringID>
+      <StringID>
+        <id>323</id>
+        <str>YATTA!</str>
+      </StringID>
+      <StringID>
+        <id>324</id>
+        <str>Jack-the-Ripper◆</str>
+      </StringID>
+      <StringID>
+        <id>325</id>
+        <str>Windy Hill -Zone 1</str>
+      </StringID>
+      <StringID>
+        <id>326</id>
+        <str>コトバ・カラフル</str>
+      </StringID>
+      <StringID>
+        <id>327</id>
+        <str>タカハせ！名人マン</str>
+      </StringID>
+      <StringID>
+        <id>328</id>
+        <str>言ノ葉カルマ</str>
+      </StringID>
+      <StringID>
+        <id>329</id>
+        <str>かせげ！ジャリンコヒーロー</str>
+      </StringID>
+      <StringID>
+        <id>330</id>
+        <str>キズナの物語</str>
+      </StringID>
+      <StringID>
+        <id>337</id>
+        <str>鼓動</str>
+      </StringID>
+      <StringID>
+        <id>339</id>
+        <str>DRAGONLADY</str>
+      </StringID>
+      <StringID>
+        <id>342</id>
+        <str>ファンタジーゾーン OPA-OPA! -GMT remix-</str>
+      </StringID>
+      <StringID>
+        <id>343</id>
+        <str>電車で電車でGO!GO!GO!GC! -GMT remix-</str>
+      </StringID>
+      <StringID>
+        <id>344</id>
+        <str>RIDGE RACER STEPS -GMT remix-</str>
+      </StringID>
+      <StringID>
+        <id>345</id>
+        <str>リッジでリッジでGO!GO!GO! -GMT mashup-</str>
+      </StringID>
+      <StringID>
+        <id>346</id>
+        <str>オパ! オパ! RACER -GMT mashup-</str>
+      </StringID>
+      <StringID>
+        <id>347</id>
+        <str>電車で電車でOPA!OPA!OPA! -GMT mashup-</str>
+      </StringID>
+    </list>
+  </MusicIds>
+</MusicGroupData>

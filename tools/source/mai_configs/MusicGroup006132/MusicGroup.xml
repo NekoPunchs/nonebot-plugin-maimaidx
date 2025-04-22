@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<MusicGroupData xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <dataName>MusicGroup006132</dataName>
+  <name>
+    <id>6132</id>
+    <str>菫</str>
+  </name>
+  <MusicIds>
+    <list>
+      <StringID>
+        <id>236</id>
+        <str>ユビキリ</str>
+      </StringID>
+      <StringID>
+        <id>432</id>
+        <str>幸せになれる隠しコマンドがあるらしい</str>
+      </StringID>
+      <StringID>
+        <id>514</id>
+        <str>ヘルシーエンド</str>
+      </StringID>
+      <StringID>
+        <id>541</id>
+        <str>華鳥風月</str>
+      </StringID>
+      <StringID>
+        <id>587</id>
+        <str>白ゆき</str>
+      </StringID>
+      <StringID>
+        <id>610</id>
+        <str>リンカーネイション</str>
+      </StringID>
+      <StringID>
+        <id>611</id>
+        <str>宿題が終わらないっ！</str>
+      </StringID>
+      <StringID>
+        <id>612</id>
+        <str>GO BACK 2 YOUR RAVE</str>
+      </StringID>
+      <StringID>
+        <id>613</id>
+        <str>天国と地獄 -言ノ葉リンネ-</str>
+      </StringID>
+      <StringID>
+        <id>614</id>
+        <str>夢花火</str>
+      </StringID>
+      <StringID>
+        <id>617</id>
+        <str>オトヒメモリー☆ウタゲーション</str>
+      </StringID>
+      <StringID>
+        <id>618</id>
+        <str>ラブチーノ</str>
+      </StringID>
+      <StringID>
+        <id>621</id>
+        <str>ARROW</str>
+      </StringID>
+      <StringID>
+        <id>622</id>
+        <str>バッド・ダンス・ホール</str>
+      </StringID>
+      <StringID>
+        <id>624</id>
+        <str>KISS CANDY FLAVOR</str>
+      </StringID>
+      <StringID>
+        <id>625</id>
+        <str>Maxi</str>
+      </StringID>
+      <StringID>
+        <id>626</id>
+        <str>相思創愛</str>
+      </StringID>
+      <StringID>
+        <id>627</id>
+        <str>心象蜃気楼</str>
+      </StringID>
+      <StringID>
+        <id>628</id>
+        <str>光線チューニング</str>
+      </StringID>
+      <StringID>
+        <id>629</id>
+        <str>Limit Break</str>
+      </StringID>
+      <StringID>
+        <id>630</id>
+        <str>曖昧mind</str>
+      </StringID>
+      <StringID>
+        <id>631</id>
+        <str>KING is BACK!!</str>
+      </StringID>
+      <StringID>
+        <id>632</id>
+        <str>Ultranova</str>
+      </StringID>
+      <StringID>
+        <id>634</id>
+        <str>GET!! 夢&amp;DREAM</str>
+      </StringID>
+      <StringID>
+        <id>636</id>
+        <str>日本の米は世界一</str>
+      </StringID>
+      <StringID>
+        <id>637</id>
+        <str>ないせんのうた</str>
+      </StringID>
+      <StringID>
+        <id>639</id>
+        <str>Starlight Dance Floor</str>
+      </StringID>
+      <StringID>
+        <id>640</id>
+        <str>妖精村の月誕祭 ～Lunate Elf</str>
+      </StringID>
+      <StringID>
+        <id>641</id>
+        <str>Calamity Fortune</str>
+      </StringID>
+      <StringID>
+        <id>647</id>
+        <str>エイリアンエイリアン</str>
+      </StringID>
+      <StringID>
+        <id>648</id>
+        <str>My Dearest Song</str>
+      </StringID>
+      <StringID>
+        <id>649</id>
+        <str>猛進ソリストライフ！</str>
+      </StringID>
+      <StringID>
+        <id>654</id>
+        <str>真・ハンサム体操でズンドコホイ</str>
+      </StringID>
+      <StringID>
+        <id>655</id>
+        <str>フラジール</str>
+      </StringID>
+      <StringID>
+        <id>657</id>
+        <str>オーディエンスを沸かす程度の能力 feat.タイツォン</str>
+      </StringID>
+      <StringID>
+        <id>658</id>
+        <str>人里に下ったアタイがいつの間にか社畜になっていた件</str>
+      </StringID>
+      <StringID>
+        <id>664</id>
+        <str>Moon of Noon</str>
+      </StringID>
+      <StringID>
+        <id>665</id>
+        <str>チルノのパーフェクトさんすう教室　⑨周年バージョン</str>
+      </StringID>
+      <StringID>
+        <id>666</id>
+        <str>デスパレイト</str>
+      </StringID>
+    </list>
+  </MusicIds>
+</MusicGroupData>
