@@ -76,13 +76,11 @@ def calc_col_max_count(cover_width: int, total_width: int, padding: int) -> int:
 
 
 def build_table_impl(group: MusicGroup, imgPath: Path):
-    bg = (Image.open(tools_config.pic_path / f"complete_table_bg.png")
-          .convert("RGBA")
-          .resize((1600, 2500)))  # 祭&祝最大需要2500h
+    bg = Image.open(tools_config.pic_path / f"complete_table_bg.png").convert("RGBA")  # 祭&祝最大需要2500h
 
     # 舞 = 1600x6550
     if group.name == "舞":
-        bg = bg.resize((1600, 6550))
+        bg = Image.open(tools_config.pic_path / f"complete_table_bg_2.png").convert("RGBA")
 
     begin_y = 325
     begin_x = 170
