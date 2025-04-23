@@ -49,7 +49,8 @@ def level_group_by(group: MusicGroup) -> dict[str, list[MusicData]]:
     for music_id in group.music_ids:
         data = music_datas.get(music_id.id)
         if data is None:
-            raise Exception(f"maybe deleted music.{music_id}")
+            print(f"maybe deleted music.{music_id}")
+            continue
 
         if len(data.level) == 5 and group.name != "舞":
             # exclude re:Master

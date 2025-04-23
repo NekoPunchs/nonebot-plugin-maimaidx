@@ -1,0 +1,304 @@
+<?xml version="1.0" encoding="utf-8"?>
+<MusicGroupData xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <dataName>MusicGroup409101</dataName>
+  <name>
+    <id>409101</id>
+    <str>祝</str>
+  </name>
+  <MusicIds>
+    <list>
+      <StringID>
+        <id>10204</id>
+        <str>ナイト・オブ・ナイツ</str>
+      </StringID>
+      <StringID>
+        <id>10251</id>
+        <str>Monochrome Rainbow</str>
+      </StringID>
+      <StringID>
+        <id>10315</id>
+        <str>深海少女</str>
+      </StringID>
+      <StringID>
+        <id>10574</id>
+        <str>Selector</str>
+      </StringID>
+      <StringID>
+        <id>11526</id>
+        <str>トノサマビーム</str>
+      </StringID>
+      <StringID>
+        <id>11527</id>
+        <str>enchanted wanderer</str>
+      </StringID>
+      <StringID>
+        <id>11528</id>
+        <str>Comet Panto Men!</str>
+      </StringID>
+      <StringID>
+        <id>11529</id>
+        <str>ツムギボシ</str>
+      </StringID>
+      <StringID>
+        <id>11530</id>
+        <str>VeRForTe αRtE:VEiN</str>
+      </StringID>
+      <StringID>
+        <id>11532</id>
+        <str>ヱデン</str>
+      </StringID>
+      <StringID>
+        <id>11533</id>
+        <str>にゃーにゃー冒険譚</str>
+      </StringID>
+      <StringID>
+        <id>11538</id>
+        <str>アンバークロニクル</str>
+      </StringID>
+      <StringID>
+        <id>11539</id>
+        <str>リフヴェイン</str>
+      </StringID>
+      <StringID>
+        <id>11540</id>
+        <str>Kairos</str>
+      </StringID>
+      <StringID>
+        <id>11541</id>
+        <str>宵の鳥</str>
+      </StringID>
+      <StringID>
+        <id>11542</id>
+        <str>ここからはじまるプロローグ。 (Kanon Remix)</str>
+      </StringID>
+      <StringID>
+        <id>11543</id>
+        <str>モ°ルモ°ル (MZK Skippin' Remix)</str>
+      </StringID>
+      <StringID>
+        <id>11544</id>
+        <str>VERTeX (rintaro soma deconstructed remix)</str>
+      </StringID>
+      <StringID>
+        <id>11545</id>
+        <str>隠密あんみつDX</str>
+      </StringID>
+      <StringID>
+        <id>11546</id>
+        <str>地球</str>
+      </StringID>
+      <StringID>
+        <id>11547</id>
+        <str>Churros Parlor</str>
+      </StringID>
+      <StringID>
+        <id>11548</id>
+        <str>超熊猫的周遊記（ワンダーパンダートラベラー）</str>
+      </StringID>
+      <StringID>
+        <id>11549</id>
+        <str>Trrricksters!!</str>
+      </StringID>
+      <StringID>
+        <id>11550</id>
+        <str>FLUFFY FLASH</str>
+      </StringID>
+      <StringID>
+        <id>11551</id>
+        <str>STARRED HEART</str>
+      </StringID>
+      <StringID>
+        <id>11552</id>
+        <str>Y.Y.Y.計画!!!!</str>
+      </StringID>
+      <StringID>
+        <id>11553</id>
+        <str>Last Kingdom</str>
+      </StringID>
+      <StringID>
+        <id>11554</id>
+        <str>LAMIA</str>
+      </StringID>
+      <StringID>
+        <id>11555</id>
+        <str>ヒバリ</str>
+      </StringID>
+      <StringID>
+        <id>11556</id>
+        <str>Hello, Hologram</str>
+      </StringID>
+      <StringID>
+        <id>11557</id>
+        <str>不機嫌なスリーカード</str>
+      </StringID>
+      <StringID>
+        <id>11558</id>
+        <str>神っぽいな</str>
+      </StringID>
+      <StringID>
+        <id>11559</id>
+        <str>魔法少女とチョコレゐト</str>
+      </StringID>
+      <StringID>
+        <id>11560</id>
+        <str>阿修羅ちゃん</str>
+      </StringID>
+      <StringID>
+        <id>11561</id>
+        <str>おとせサンダー</str>
+      </StringID>
+      <StringID>
+        <id>11562</id>
+        <str>ロウワー</str>
+      </StringID>
+      <StringID>
+        <id>11563</id>
+        <str>キャットラビング</str>
+      </StringID>
+      <StringID>
+        <id>11564</id>
+        <str>リスペク風神</str>
+      </StringID>
+      <StringID>
+        <id>11565</id>
+        <str>Let you DIVE!</str>
+      </StringID>
+      <StringID>
+        <id>11566</id>
+        <str>Knight Rider</str>
+      </StringID>
+      <StringID>
+        <id>11568</id>
+        <str>INTERNET OVERDOSE</str>
+      </StringID>
+      <StringID>
+        <id>11569</id>
+        <str>魂のルフラン</str>
+      </StringID>
+      <StringID>
+        <id>11570</id>
+        <str>Shooting Shower～DANCE TIME(シンディ)～</str>
+      </StringID>
+      <StringID>
+        <id>11571</id>
+        <str>Lights of Muse</str>
+      </StringID>
+      <StringID>
+        <id>11572</id>
+        <str>tape/stop/night</str>
+      </StringID>
+      <StringID>
+        <id>11573</id>
+        <str>Final Step!</str>
+      </StringID>
+      <StringID>
+        <id>11574</id>
+        <str>The 90's Decision</str>
+      </StringID>
+      <StringID>
+        <id>11575</id>
+        <str>僕の和風本当上手</str>
+      </StringID>
+      <StringID>
+        <id>11576</id>
+        <str>Cthugha</str>
+      </StringID>
+      <StringID>
+        <id>11577</id>
+        <str>はんぶんこ</str>
+      </StringID>
+      <StringID>
+        <id>11583</id>
+        <str>インターネットサバイバー</str>
+      </StringID>
+      <StringID>
+        <id>11584</id>
+        <str>コンティニュー！ feat. 藍月なくる</str>
+      </StringID>
+      <StringID>
+        <id>11585</id>
+        <str>Sunday Night feat Kanata.N</str>
+      </StringID>
+      <StringID>
+        <id>11586</id>
+        <str>PERSONA feat. PANXI</str>
+      </StringID>
+      <StringID>
+        <id>11587</id>
+        <str>Halfway(&gt;∀&lt;)</str>
+      </StringID>
+      <StringID>
+        <id>11588</id>
+        <str>Complex Mind</str>
+      </StringID>
+      <StringID>
+        <id>11589</id>
+        <str>DROPS feat. Such</str>
+      </StringID>
+      <StringID>
+        <id>11590</id>
+        <str>あつすぎの歌</str>
+      </StringID>
+      <StringID>
+        <id>11591</id>
+        <str>ULTRA SYNERGY MATRIX</str>
+      </StringID>
+      <StringID>
+        <id>11592</id>
+        <str>花となれ</str>
+      </StringID>
+      <StringID>
+        <id>11593</id>
+        <str>私のドッペルゲンガー</str>
+      </StringID>
+      <StringID>
+        <id>11594</id>
+        <str>BULK UP (GAME EXCLUSIVE EDIT)</str>
+      </StringID>
+      <StringID>
+        <id>11596</id>
+        <str>Vallista</str>
+      </StringID>
+      <StringID>
+        <id>11598</id>
+        <str>テオ</str>
+      </StringID>
+      <StringID>
+        <id>11599</id>
+        <str>まにまに</str>
+      </StringID>
+      <StringID>
+        <id>11600</id>
+        <str>感情ディシーブ</str>
+      </StringID>
+      <StringID>
+        <id>11601</id>
+        <str>ド屑</str>
+      </StringID>
+      <StringID>
+        <id>11602</id>
+        <str>絶対敵対メチャキライヤー</str>
+      </StringID>
+      <StringID>
+        <id>11603</id>
+        <str>つるぺったん</str>
+      </StringID>
+      <StringID>
+        <id>11604</id>
+        <str>『ウソテイ』 ～一回戦せりなvsしろなvsなずな～</str>
+      </StringID>
+      <StringID>
+        <id>11605</id>
+        <str>Bad Apple!! feat.nomico ～五十嵐 撫子 Ver.～</str>
+      </StringID>
+      <StringID>
+        <id>11606</id>
+        <str>Snow Colored Score</str>
+      </StringID>
+      <StringID>
+        <id>11607</id>
+        <str>MAGENTA POTION</str>
+      </StringID>
+    </list>
+  </MusicIds>
+</MusicGroupData>

@@ -44,10 +44,7 @@
 ## 配置
    
 1. 下载静态资源文件，将该压缩文件解压，且解压完为文件夹 `static`
-
-   - [私人云盘](https://cloud.yuzuchan.moe/f/1bUn/Resource.7z)
-   - [AList网盘](https://share.yuzuchan.moe/p/Resource.7z?sign=EvCwaGwJrneyD1Olq00NG3HXNK7fQKpx_sa3Ck9Uzjs=:0)
-   - [onedrive](https://yuzuai-my.sharepoint.com/:u:/g/personal/yuzuchan_yuzuai_onmicrosoft_com/EdGUKRSo-VpHjT2noa_9EroBVO27iYMSQO3oFnZjpYTbqA?e=FE4KXY)
+   - [AList网盘](https://shadowdr.cn/disk/maimaiDX)
 
 2. 在 `.env` 文件中配置静态文件绝对路径 `MAIMAIDXPATH`
 
@@ -84,8 +81,3 @@
 ## 指令
 
 ![img](https://raw.githubusercontent.com/Yuri-YuzuChaN/nonebot-plugin-maimaidx/master/nonebot_plugin_maimaidx/maimaidxhelp.png)
-
-## 额外添加功能
-1. 随个xx支持具体定数(例:"随个13.6","随个紫13.4") 
-2. image.py/image_to_base64 将图像质量降低到50%来节省服务器流量 
-3. 删除了ginfo指令,懒的配PhantomJS 

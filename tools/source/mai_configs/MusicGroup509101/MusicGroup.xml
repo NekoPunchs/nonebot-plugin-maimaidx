@@ -1,0 +1,288 @@
+<?xml version="1.0" encoding="utf-8"?>
+<MusicGroupData xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <dataName>MusicGroup509101</dataName>
+  <name>
+    <id>509101</id>
+    <str>宴</str>
+  </name>
+  <MusicIds>
+    <list>
+      <StringID>
+        <id>1301</id>
+        <str>華の集落、秋のお届け</str>
+      </StringID>
+      <StringID>
+        <id>10044</id>
+        <str>ハッピーシンセサイザ</str>
+      </StringID>
+      <StringID>
+        <id>10117</id>
+        <str>炎歌 -ほむらうた-</str>
+      </StringID>
+      <StringID>
+        <id>10128</id>
+        <str>御旗のもとに</str>
+      </StringID>
+      <StringID>
+        <id>10225</id>
+        <str>sweet little sister</str>
+      </StringID>
+      <StringID>
+        <id>11669</id>
+        <str>エスオーエス</str>
+      </StringID>
+      <StringID>
+        <id>11670</id>
+        <str>のじゃロリック</str>
+      </StringID>
+      <StringID>
+        <id>11671</id>
+        <str>Edelweiss</str>
+      </StringID>
+      <StringID>
+        <id>11672</id>
+        <str>QuiQ</str>
+      </StringID>
+      <StringID>
+        <id>11673</id>
+        <str>IF:U</str>
+      </StringID>
+      <StringID>
+        <id>11674</id>
+        <str>Cider P@rty</str>
+      </StringID>
+      <StringID>
+        <id>11675</id>
+        <str>勦滅</str>
+      </StringID>
+      <StringID>
+        <id>11676</id>
+        <str>Lunatic Vibes</str>
+      </StringID>
+      <StringID>
+        <id>11677</id>
+        <str>Bloody Trail</str>
+      </StringID>
+      <StringID>
+        <id>11678</id>
+        <str>RE:INCARNATED DRAGNER</str>
+      </StringID>
+      <StringID>
+        <id>11679</id>
+        <str>Beginning together!</str>
+      </StringID>
+      <StringID>
+        <id>11680</id>
+        <str>Shining Ray ～僕らの絆～</str>
+      </StringID>
+      <StringID>
+        <id>11681</id>
+        <str>DEVOTION</str>
+      </StringID>
+      <StringID>
+        <id>11682</id>
+        <str>Geranium</str>
+      </StringID>
+      <StringID>
+        <id>11683</id>
+        <str>The Cursed Doll</str>
+      </StringID>
+      <StringID>
+        <id>11684</id>
+        <str>RondeauX of RagnaroQ</str>
+      </StringID>
+      <StringID>
+        <id>11685</id>
+        <str>ℝ∈Χ LUNATiCA</str>
+      </StringID>
+      <StringID>
+        <id>11686</id>
+        <str>Λzure Vixen</str>
+      </StringID>
+      <StringID>
+        <id>11687</id>
+        <str>MarbleBlue.</str>
+      </StringID>
+      <StringID>
+        <id>11688</id>
+        <str>まっすぐ→→→ストリーム！</str>
+      </StringID>
+      <StringID>
+        <id>11689</id>
+        <str>最っ高のエンタメだ!!</str>
+      </StringID>
+      <StringID>
+        <id>11690</id>
+        <str>Baqeela</str>
+      </StringID>
+      <StringID>
+        <id>11691</id>
+        <str>Ai C</str>
+      </StringID>
+      <StringID>
+        <id>11692</id>
+        <str>INTERNET YAMERO</str>
+      </StringID>
+      <StringID>
+        <id>11693</id>
+        <str>過去を喰らう</str>
+      </StringID>
+      <StringID>
+        <id>11694</id>
+        <str>強風オールバック</str>
+      </StringID>
+      <StringID>
+        <id>11695</id>
+        <str>寝起きヤシの木</str>
+      </StringID>
+      <StringID>
+        <id>11696</id>
+        <str>アイドル</str>
+      </StringID>
+      <StringID>
+        <id>11697</id>
+        <str>ラビットホール</str>
+      </StringID>
+      <StringID>
+        <id>11698</id>
+        <str>酔いどれ知らず</str>
+      </StringID>
+      <StringID>
+        <id>11699</id>
+        <str>新人類</str>
+      </StringID>
+      <StringID>
+        <id>11700</id>
+        <str>Freak Out Hr.</str>
+      </StringID>
+      <StringID>
+        <id>11701</id>
+        <str>さよならヒストリー</str>
+      </StringID>
+      <StringID>
+        <id>11702</id>
+        <str>New York Back Raise</str>
+      </StringID>
+      <StringID>
+        <id>11704</id>
+        <str>DUAL ROZES</str>
+      </StringID>
+      <StringID>
+        <id>11705</id>
+        <str>VOLT</str>
+      </StringID>
+      <StringID>
+        <id>11706</id>
+        <str>tiny tales continue</str>
+      </StringID>
+      <StringID>
+        <id>11707</id>
+        <str>ouroboros -twin stroke of the end-</str>
+      </StringID>
+      <StringID>
+        <id>11708</id>
+        <str>カーニバルハッピー</str>
+      </StringID>
+      <StringID>
+        <id>11709</id>
+        <str>つづみぐさ</str>
+      </StringID>
+      <StringID>
+        <id>11710</id>
+        <str>サイバーサンダーサイダー</str>
+      </StringID>
+      <StringID>
+        <id>11711</id>
+        <str>おくすり飲んで寝よう</str>
+      </StringID>
+      <StringID>
+        <id>11712</id>
+        <str>バラバラ〜仮初レインボーローズ〜</str>
+      </StringID>
+      <StringID>
+        <id>11713</id>
+        <str>QUATTUORUX</str>
+      </StringID>
+      <StringID>
+        <id>11714</id>
+        <str>匿名M</str>
+      </StringID>
+      <StringID>
+        <id>11715</id>
+        <str>ライアーダンサー</str>
+      </StringID>
+      <StringID>
+        <id>11716</id>
+        <str>バカ通信</str>
+      </StringID>
+      <StringID>
+        <id>11717</id>
+        <str>LOSTPHANTASIA</str>
+      </StringID>
+      <StringID>
+        <id>11718</id>
+        <str>Bad Apple!! feat.nomico (Tetsuya Komuro Remix)</str>
+      </StringID>
+      <StringID>
+        <id>11720</id>
+        <str>Re:Unknown X</str>
+      </StringID>
+      <StringID>
+        <id>11721</id>
+        <str>INFiNiTE ENERZY -Overdoze-</str>
+      </StringID>
+      <StringID>
+        <id>11722</id>
+        <str>Make Up Your World feat. キョンシーのCiちゃん &amp; らっぷびと</str>
+      </StringID>
+      <StringID>
+        <id>11723</id>
+        <str>BOOM! BOOM!! BOOM!!!</str>
+      </StringID>
+      <StringID>
+        <id>11724</id>
+        <str>Everybody Say HARDCORE TANO*C</str>
+      </StringID>
+      <StringID>
+        <id>11725</id>
+        <str>ミラクルポップ☆アドベンチャー!!!!!</str>
+      </StringID>
+      <StringID>
+        <id>11726</id>
+        <str>Trust</str>
+      </StringID>
+      <StringID>
+        <id>11727</id>
+        <str>ラヴィ</str>
+      </StringID>
+      <StringID>
+        <id>11728</id>
+        <str>スティールユー</str>
+      </StringID>
+      <StringID>
+        <id>11729</id>
+        <str>オシオキGIMMICK!!</str>
+      </StringID>
+      <StringID>
+        <id>11730</id>
+        <str>偉大なる悪魔は実は大天使パトラちゃん様なのだ！</str>
+      </StringID>
+      <StringID>
+        <id>11731</id>
+        <str>シュガーホリック</str>
+      </StringID>
+      <StringID>
+        <id>11733</id>
+        <str>MUSIC PЯAYER</str>
+      </StringID>
+      <StringID>
+        <id>11734</id>
+        <str>壱雫空</str>
+      </StringID>
+      <StringID>
+        <id>11735</id>
+        <str>ザムザ</str>
+      </StringID>
+    </list>
+  </MusicIds>
+</MusicGroupData>
