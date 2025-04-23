@@ -635,8 +635,6 @@ async def draw_plate_table(qqid: int, version: str, plan: str) -> Union[MessageS
                 mr.draw(390 + 200 * num, 270, 35, '完成', color[num], 'rm', 4, (255, 255, 255, 255))
             else:
                 tr.draw(390 + 200 * num, 270, 40, _v, color[num], 'rm', 4, (255, 255, 255, 255))
-
-        bg.show()
         msg = MessageSegment.image(image_to_base64(bg))
     except (UserNotFoundError, UserNotExistsError, UserDisabledQueryError) as e:
         msg = str(e)
