@@ -624,12 +624,12 @@ async def draw_plate_table(qqid: int, version: str, plan: str) -> Union[MessageS
                 v = set.intersection(*lv[0:3])
                 v_count = len(v)
                 if include_rem:
-                    v_count -= len(set(v.difference(remaster_list)))
+                    v_count -= len(remaster_list) - len(v.intersection(remaster_list))
                 _v = f'{v_count}/{plate_total_num}'
 
             else:
                 _v = len(lv[num - 1])
-            if include_rem and num == 5 and _v == len(remaster_list):
+            if include_rem and num == 5 and len(lv[4].intersection(remaster_list)) == len(remaster_list):
                 mr.draw(390 + 200 * num, 270, 35, '完成', color[num], 'rm', 4, (255, 255, 255, 255))
             elif _v == plate_total_num:
                 mr.draw(390 + 200 * num, 270, 35, '完成', color[num], 'rm', 4, (255, 255, 255, 255))
