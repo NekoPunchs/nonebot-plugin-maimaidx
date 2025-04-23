@@ -16,10 +16,12 @@ from .maimaidx_model import *
 from .tool import openfile, writefile
 
 
+LOAD_LOCAL = True
+
 def cross(
-    checker: Union[List[str], List[float]], 
-    elem: Optional[Union[str, float, List[str], List[float], Tuple[float, float]]], 
-    diff: List[int]
+        checker: Union[List[str], List[float]],
+        elem: Optional[Union[str, float, List[str], List[float], Tuple[float, float]]],
+        diff: List[int]
 ) -> Tuple[bool, List[int]]:
     ret = False
     diff_ret = []
@@ -53,8 +55,8 @@ def cross(
 
 
 def in_or_equal(
-    checker: Union[str, int], 
-    elem: Optional[Union[str, float, List[str], List[float], Tuple[float, float]]]
+        checker: Union[str, int],
+        elem: Optional[Union[str, float, List[str], List[float], Tuple[float, float]]]
 ) -> bool:
     if elem is Ellipsis:
         return True
@@ -67,7 +69,7 @@ def in_or_equal(
 
 
 class MusicList(List[Music]):
-    
+
     def by_id(self, music_id: Union[str, int]) -> Optional[Music]:
         for music in self:
             if music.id == str(music_id):
@@ -79,36 +81,36 @@ class MusicList(List[Music]):
             if music.title == music_title:
                 return music
         return None
-    
+
     def by_plan(self, level: str) -> Dict[str, Union[PlanInfo, RaMusic, Dict[int, Union[PlanInfo, RaMusic]]]]:
         lv = {}
         for music in self:
             if level not in music.level:
                 continue
             count = Counter(music.level)
-            if count.get(level) > 1: # 同曲有相同等级
-                lv[music.id] = { 
+            if count.get(level) > 1:  # 同曲有相同等级
+                lv[music.id] = {
                     index: RaMusic(
-                        id=music.id, 
-                        ds=music.ds[index], 
-                        lv=str(index), 
-                        lvp=music.level[index], 
+                        id=music.id,
+                        ds=music.ds[index],
+                        lv=str(index),
+                        lvp=music.level[index],
                         type=music.type
-                    ) 
-                    for index, _lv in enumerate(music.level) 
-                    if _lv == level 
+                    )
+                    for index, _lv in enumerate(music.level)
+                    if _lv == level
                 }
             else:
                 index = music.level.index(level)
                 lv[music.id] = RaMusic(
-                    id=music.id, 
-                    ds=music.ds[index], 
-                    lv=str(index), 
-                    lvp=music.level[index], 
+                    id=music.id,
+                    ds=music.ds[index],
+                    lv=str(index),
+                    lvp=music.level[index],
                     type=music.type
                 )
         return lv
-    
+
     def by_level_list(self) -> Dict[str, Dict[str, List[RaMusic]]]:
         levellist = None
         _level: Dict[str, Dict[str, List[RaMusic]]] = {}
@@ -137,30 +139,30 @@ class MusicList(List[Music]):
                 )
                 _level[music.level[index]][str(ds)].append(ra)
         return _level
-    
+
     def by_id_list(self, music_id_list: List[int]) -> Optional[List[Music]]:
         musicList = []
         for music in self:
             if int(music.id) in music_id_list:
                 musicList.append(music)
         return musicList
-    
+
     def random(self) -> Music:
         return random.choice(self)
 
     def filter(
-        self,
-        *,
-        level: Optional[Union[str, List[str]]] = ...,
-        ds: Optional[Union[float, List[float], Tuple[float, float]]] = ...,
-        title_search: Optional[str] = ...,
-        artist_search: Optional[str] = ...,
-        charter_search: Optional[str] = ...,
-        genre: Optional[Union[str, List[str]]] = ...,
-        bpm: Optional[Union[float, List[float], Tuple[float, float]]] = ...,
-        type: Optional[Union[str, List[str]]] = ...,
-        diff: List[int] = ...,
-        version: Union[str, List[str]] = ...
+            self,
+            *,
+            level: Optional[Union[str, List[str]]] = ...,
+            ds: Optional[Union[float, List[float], Tuple[float, float]]] = ...,
+            title_search: Optional[str] = ...,
+            artist_search: Optional[str] = ...,
+            charter_search: Optional[str] = ...,
+            genre: Optional[Union[str, List[str]]] = ...,
+            bpm: Optional[Union[float, List[float], Tuple[float, float]]] = ...,
+            type: Optional[Union[str, List[str]]] = ...,
+            diff: List[int] = ...,
+            version: Union[str, List[str]] = ...
     ) -> 'MusicList':
         new_list = MusicList()
         for music in self:
@@ -212,7 +214,7 @@ class AliasList(List[Alias]):
             if music.SongID == int(music_id):
                 alias_music.append(music)
         return alias_music
-    
+
     def by_alias(self, music_alias: str) -> Optional[List[Alias]]:
         alias_list = []
         for music in self:
@@ -237,27 +239,31 @@ aliaserror = dedent('''
 
 async def get_music_list() -> MusicList:
     """获取所有数据"""
-    # MusicData
-    try:
-        try: 
-            music_data = await maiApi.music_data()
-            await writefile(music_file, music_data)
-        except asyncio.exceptions.TimeoutError:
-            log.error('从diving-fish获取maimaiDX曲库数据超时，正在使用yuzuapi中转获取曲库数据')
+
+    if not LOAD_LOCAL:
+        # MusicData
+        try:
             try:
-                music_data = await maiApi.transfer_music()
+                music_data = await maiApi.music_data()
                 await writefile(music_file, music_data)
-            except ServerError:
-                log.error('从yuzuapi获取maimaiDX曲库数据失败，请检查网络环境。已切换至本地暂存文件')
+            except asyncio.exceptions.TimeoutError:
+                log.error('从diving-fish获取maimaiDX曲库数据超时，正在使用yuzuapi中转获取曲库数据')
+                try:
+                    music_data = await maiApi.transfer_music()
+                    await writefile(music_file, music_data)
+                except ServerError:
+                    log.error('从yuzuapi获取maimaiDX曲库数据失败，请检查网络环境。已切换至本地暂存文件')
+                    music_data = await openfile(music_file)
+            except Exception:
+                log.error(f'Error: {traceback.format_exc()}')
+                log.error('maimaiDX曲库数据获取失败，请检查网络环境。已切换至本地暂存文件')
                 music_data = await openfile(music_file)
-        except Exception:
-            log.error(f'Error: {traceback.format_exc()}')
-            log.error('maimaiDX曲库数据获取失败，请检查网络环境。已切换至本地暂存文件')
-            music_data = await openfile(music_file)
-    except FileNotFoundError:
-        log.error(dataerror)
-        raise FileNotFoundError
-    
+        except FileNotFoundError:
+            log.error(dataerror)
+            raise FileNotFoundError
+    else:
+        music_data = await openfile(music_file)
+
     # ChartStats
     try:
         try:
@@ -286,7 +292,7 @@ async def get_music_list() -> MusicList:
                 _data if _data else None
                 for _data in chart_stats['charts'][music['id']]
             ] if {} in chart_stats['charts'][music['id']] else \
-            chart_stats['charts'][music['id']]
+                chart_stats['charts'][music['id']]
         else:
             _stats = None
         for lv in ['5+', '6+']:
@@ -341,7 +347,7 @@ async def update_local_alias(id: str, alias_name: str) -> bool:
             local_alias_data: Dict[str, List[str]] = {}
         if id not in local_alias_data:
             local_alias_data[id] = []
-        
+
         local_alias_data[id].append(alias_name.lower())
         mai.total_alias_list.by_id(id)[0].Alias.append(alias_name.lower())
         await writefile(local_alias_file, local_alias_data)
@@ -352,7 +358,6 @@ async def update_local_alias(id: str, alias_name: str) -> bool:
 
 
 class MaiMusic:
-
     total_list: MusicList
     """曲目数据"""
     total_alias_list: AliasList
@@ -377,10 +382,20 @@ class MaiMusic:
     async def get_music_alias(self) -> None:
         """获取所有曲目别名"""
         self.total_alias_list = await get_music_alias_list()
-        
+
     async def get_plate_json(self) -> None:
-        """获取所有牌子数据"""
-        self.total_plate_id_list = await maiApi.get_plate_json()
+        if LOAD_LOCAL:
+            self.total_plate_id_list = await openfile(plate_file)
+            return
+
+        try:
+            """获取所有牌子数据"""
+            self.total_plate_id_list = await maiApi.get_plate_json()
+            await writefile(plate_file, self.total_plate_id_list)
+        except Exception:
+            log.error(f'Error: {traceback.format_exc()}')
+            log.error('maimaiDX牌子数据获取失败，请检查网络环境。已切换至本地暂存文件')
+            self.total_plate_id_list = await openfile(plate_file)
 
     def guess(self):
         """初始化猜歌数据"""
@@ -399,7 +414,6 @@ mai = MaiMusic()
 
 
 class Guess:
-    
     Group: Dict[int, Union[GuessDefaultData, GuessPicData]] = {}
     switch: GuessSwitch
 
@@ -419,7 +433,7 @@ class Guess:
     def startpic(self, gid: int):
         """开始猜曲绘"""
         self.Group[gid] = self.guesspicdata()
-        
+
     def calculate_frequency_weights(self, image: Image.Image) -> np.ndarray:
         """
         计算图像的频率权重，用于在图像中选择裁剪区域
@@ -438,11 +452,11 @@ class Guess:
         return weights
 
     def select_crop_region(
-        self, 
-        weights: np.ndarray, 
-        crop_width: int, 
-        crop_height: int, 
-        top_p: int
+            self,
+            weights: np.ndarray,
+            crop_width: int,
+            crop_height: int,
+            top_p: int
     ) -> Tuple[int, int]:
         h, w = weights.shape
         valid_regions = weights[:h - crop_height + 1, :w - crop_width + 1]
@@ -455,7 +469,7 @@ class Guess:
         top_left_y = chosen_index // valid_regions.shape[1]
         top_left_x = chosen_index % valid_regions.shape[1]
         return top_left_x, top_left_y
-    
+
     def pic(self, music: Music) -> Image.Image:
         """裁切曲绘"""
         im = Image.open(music_picture(music.id))
@@ -493,10 +507,10 @@ class Guess:
         answer.append(music.id)
         pic = self.pic(music)
         return GuessDefaultData(
-            music=music, 
-            img=image_to_base64(pic), 
-            answer=answer, 
-            end=False, 
+            music=music,
+            img=image_to_base64(pic),
+            answer=answer,
+            end=False,
             options=guess_options
         )
 
@@ -529,7 +543,6 @@ guess = Guess()
 
 
 class GroupAlias:
-
     push: AliasesPush
 
     def __init__(self) -> None:

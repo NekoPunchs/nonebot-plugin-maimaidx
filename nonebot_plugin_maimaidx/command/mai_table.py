@@ -9,15 +9,16 @@ from ..libraries.maimaidx_music_info import *
 from ..libraries.maimaidx_player_score import *
 from ..libraries.maimaidx_update_plate import *
 
-update_table            = on_fullmatch('更新定数表', permission=SUPERUSER)
-update_plate            = on_fullmatch('更新完成表', permission=SUPERUSER)
-rating_table            = on_regex(r'([0-9]+\+?)定数表')
-rating_table_pfm        = on_regex(r'^([0-9]+\+?)(([apfcp]+|\+)+)?完成表$', re.IGNORECASE)
-plate_table_pfm         = on_regex(r'^([真超檄橙暁晓桃櫻樱紫菫堇白雪輝辉熊華华爽煌舞霸星宙祭祝双宴])([極极将舞神者]舞?)完成表$')
-rise_score              = on_regex(r'^我要在?([0-9]+\+?)?[上加\+]([0-9]+)?分\s?(.+)?')
-plate_process           = on_regex(r'^([真超檄橙暁晓桃櫻樱紫菫堇白雪輝辉熊華华爽煌舞霸星宙祭祝双宴])([極极将舞神者]舞?)进度\s?(.+)?')
-level_process           = on_regex(r'^([0-9]+\+?)\s?([abcdsfxp\+]+)\s?([\u4e00-\u9fa5]+)?\s?进度\s?([0-9]+)?(.+)?', re.IGNORECASE)
-level_achievement_list  = on_regex(r'^([0-9]+\.?[0-9]?\+?)\s?分数列表\s?([0-9]+)?\s?(.+)?')
+update_table = on_fullmatch('更新定数表', permission=SUPERUSER)
+update_plate = on_fullmatch('更新完成表', permission=SUPERUSER)
+rating_table = on_regex(r'([0-9]+\+?)定数表')
+rating_table_pfm = on_regex(r'^([0-9]+\+?)(([apfcp]+|\+)+)?完成表$', re.IGNORECASE)
+plate_table_pfm = on_regex(r'^([真超檄橙暁晓桃櫻樱紫菫堇白雪輝辉熊華华爽煌舞霸星宙祭祝双宴])([極极将舞神者]舞?)完成表$')
+rise_score = on_regex(r'^我要在?([0-9]+\+?)?[上加\+]([0-9]+)?分\s?(.+)?')
+plate_process = on_regex(
+    r'^([真超檄橙暁晓桃櫻樱紫菫堇白雪輝辉熊華华爽煌舞霸星宙祭祝双宴])([極极将舞神者]舞?)进度\s?(.+)?')
+level_process = on_regex(r'^([0-9]+\+?)\s?([abcdsfxp\+]+)\s?([\u4e00-\u9fa5]+)?\s?进度\s?([0-9]+)?(.+)?', re.IGNORECASE)
+level_achievement_list = on_regex(r'^([0-9]+\.?[0-9]?\+?)\s?分数列表\s?([0-9]+)?\s?(.+)?')
 
 
 def get_at_qq(message: MessageEvent) -> Optional[int]:
@@ -30,7 +31,7 @@ def get_at_qq(message: MessageEvent) -> Optional[int]:
 @update_table.handle()
 async def _(event: PrivateMessageEvent):
     await update_table.finish(await update_rating_table())
-    
+
 
 @update_plate.handle()
 async def _(event: PrivateMessageEvent):
@@ -38,7 +39,7 @@ async def _(event: PrivateMessageEvent):
 
 
 @rating_table.handle()
-async def _(match = RegexMatched()):
+async def _(match=RegexMatched()):
     args = match.group(1).strip()
     if args in levelList[:5]:
         await rating_table.finish('只支持查询lv6-15的定数表', reply_message=True)
@@ -51,7 +52,7 @@ async def _(match = RegexMatched()):
 
 
 @rating_table_pfm.handle()
-async def _(event: MessageEvent, match = RegexMatched()):
+async def _(event: MessageEvent, match=RegexMatched()):
     ra = match.group(1)
     plan = match.group(2)
     if ra in levelList[:5]:
@@ -64,13 +65,13 @@ async def _(event: MessageEvent, match = RegexMatched()):
 
 
 @plate_table_pfm.handle()
-async def _(event: MessageEvent, match = RegexMatched()):
+async def _(event: MessageEvent, match=RegexMatched()):
     ver = match.group(1)
     plan = match.group(2)
     if ver in platecn:
         ver = platecn[ver]
-    if ver in ['舞', '霸']:
-        await plate_table_pfm.finish('暂不支持查询「舞」系和「霸者」的牌子', reply_message=True)
+    if ver in ['双', '宴']:  # SDGB尚未更新完毕
+        await plate_table_pfm.finish('暂不支持查询「双/宴」系的牌子', reply_message=True)
     if f'{ver}{plan}' == '真将':
         await plate_table_pfm.finish('真系没有真将哦', reply_message=True)
     pic = await draw_plate_table(event.user_id, ver, plan)
@@ -78,13 +79,13 @@ async def _(event: MessageEvent, match = RegexMatched()):
 
 
 @rise_score.handle()
-async def _(event: MessageEvent, match = RegexMatched(), user_id: Optional[int] = Depends(get_at_qq)):
+async def _(event: MessageEvent, match=RegexMatched(), user_id: Optional[int] = Depends(get_at_qq)):
     qqid = user_id or event.user_id
     username = None
-    
+
     rating = match.group(1)
     score = match.group(2)
-    
+
     if rating and rating not in levelList:
         await rise_score.finish('无此等级', reply_message=True)
     elif match.group(3):
@@ -97,11 +98,11 @@ async def _(event: MessageEvent, match = RegexMatched(), user_id: Optional[int] 
 
 
 @plate_process.handle()
-async def _(event: MessageEvent, match = RegexMatched(), user_id: Optional[int] = Depends(get_at_qq)):
+async def _(event: MessageEvent, match=RegexMatched(), user_id: Optional[int] = Depends(get_at_qq)):
     qqid = user_id or event.user_id
     ver = match.group(1)
     plan = match.group(2)
-    
+
     if f'{ver}{plan}' == '真将':
         await plate_process.finish('真系没有真将哦', reply_message=True)
 
@@ -110,15 +111,15 @@ async def _(event: MessageEvent, match = RegexMatched(), user_id: Optional[int] 
 
 
 @level_process.handle()
-async def _(event: MessageEvent, match = RegexMatched(), user_id: Optional[int] = Depends(get_at_qq)):
+async def _(event: MessageEvent, match=RegexMatched(), user_id: Optional[int] = Depends(get_at_qq)):
     qqid = user_id or event.user_id
-    
+
     level = match.group(1)
     plan = match.group(2)
     category = match.group(3)
     page = match.group(4)
     username = match.group(5)
-    
+
     if level not in levelList:
         await level_process.finish('无此等级', reply_message=True)
     if plan.lower() not in scoreRank + comboRank + syncRank:
@@ -144,13 +145,13 @@ async def _(event: MessageEvent, match = RegexMatched(), user_id: Optional[int] 
 
 
 @level_achievement_list.handle()
-async def _(event: MessageEvent, match = RegexMatched(), user_id: Optional[int] = Depends(get_at_qq)):
+async def _(event: MessageEvent, match=RegexMatched(), user_id: Optional[int] = Depends(get_at_qq)):
     qqid = user_id or event.user_id
 
     rating = match.group(1)
     page = match.group(2)
     username = match.group(3)
-    
+
     try:
         if '.' in rating:
             rating = round(float(rating), 1)

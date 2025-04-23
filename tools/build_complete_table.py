@@ -16,7 +16,6 @@ def build_table():
     plate_path = tools_config.plate_path
     for group in music_group.values():
         build_table_impl(group, plate_path / f"{group.name}.png")
-        break
 
 
 def draw_level_icon(bg: Image.Image, level: str, xy: Tuple[int, int]):
@@ -50,9 +49,10 @@ def level_group_by(group: MusicGroup) -> dict[str, list[MusicData]]:
     for music_id in group.music_ids:
         data = music_datas.get(music_id.id)
         if data is None:
-            raise Exception(f"not find music id {music_id}.")
+            raise Exception(f"maybe deleted music.{music_id}")
 
-        if len(data.level) == 5:  # include re:Master
+        if len(data.level) == 5 and group.name != "舞":
+            # exclude re:Master
             last_level = data.level[-2]
         else:
             last_level = data.level[-1]
@@ -71,12 +71,17 @@ def calc_col_max_count(cover_width: int, total_width: int, padding: int) -> int:
         if count * cover_width + (count - 1) * padding > total_width:
             break
         count += 1
-
     return count - 1
 
 
 def build_table_impl(group: MusicGroup, imgPath: Path):
-    bg = Image.open(tools_config.pic_path / f"complete_table_bg.png").convert("RGBA")  # size 1600,2100
+    bg = (Image.open(tools_config.pic_path / f"complete_table_bg.png")
+          .convert("RGBA")
+          .resize((1600, 2500)))  # 祭&祝最大需要2500h
+
+    # 舞 = 1600x6550
+    if group.name == "舞":
+        bg = bg.resize((1600, 6550))
 
     begin_y = 325
     begin_x = 170
@@ -102,8 +107,8 @@ def build_table_impl(group: MusicGroup, imgPath: Path):
             if col >= max_cols:
                 col = 0
                 row += 1
-        row += 1
-        col = 0
-
-    # bg.save(imgPath, format="jpeg")
-    bg.show("preview")
+        if col != 0:
+            row += 1
+            col = 0
+    bg.save(imgPath, format="png")
+    # bg.show("preview")

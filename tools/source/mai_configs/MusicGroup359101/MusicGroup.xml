@@ -64,10 +64,6 @@
         <str>春を告げる</str>
       </StringID>
       <StringID>
-        <id>11348</id>
-        <str>VOLTAGE</str>
-      </StringID>
-      <StringID>
         <id>11375</id>
         <str>ミルキースター・シューティングスター</str>
       </StringID>
@@ -152,10 +148,6 @@
         <str>Jouez Avec Moi?</str>
       </StringID>
       <StringID>
-        <id>11396</id>
-        <str>テリトリーバトル</str>
-      </StringID>
-      <StringID>
         <id>11398</id>
         <str>Good bye, Merry-Go-Round.</str>
       </StringID>
@@ -184,14 +176,6 @@
         <str>エータ・ベータ・イータ</str>
       </StringID>
       <StringID>
-        <id>11407</id>
-        <str>くらべられっ子</str>
-      </StringID>
-      <StringID>
-        <id>11408</id>
-        <str>あの世行きのバスに乗ってさらば。</str>
-      </StringID>
-      <StringID>
         <id>11410</id>
         <str>ヴァンパイア</str>
       </StringID>
@@ -218,14 +202,6 @@
       <StringID>
         <id>11419</id>
         <str>Caterpillar Song</str>
-      </StringID>
-      <StringID>
-        <id>11420</id>
-        <str>Photon Melodies</str>
-      </StringID>
-      <StringID>
-        <id>11421</id>
-        <str>吾輩よ猫であれ</str>
       </StringID>
       <StringID>
         <id>11422</id>
@@ -258,14 +234,6 @@
       <StringID>
         <id>11429</id>
         <str>Love's Theme of BADASS ～バッド・アス 愛のテーマ～</str>
-      </StringID>
-      <StringID>
-        <id>11430</id>
-        <str>オントロジー</str>
-      </StringID>
-      <StringID>
-        <id>11431</id>
-        <str>剣を抜け！GCCX MAX</str>
       </StringID>
       <StringID>
         <id>11432</id>
@@ -330,10 +298,6 @@
       <StringID>
         <id>11449</id>
         <str>パズルリボン</str>
-      </StringID>
-      <StringID>
-        <id>11450</id>
-        <str>YONA YONA DANCE</str>
       </StringID>
       <StringID>
         <id>11451</id>

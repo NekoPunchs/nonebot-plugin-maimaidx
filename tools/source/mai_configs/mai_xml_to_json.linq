@@ -64,7 +64,7 @@ public static bool Deserialize<T>(string filePath, out T dsr) where T : new()
 
 void Main()
 {
-	var p = @"D:\Github\GoBot\plugins\nonebot-plugin-maimaidx\tools\mai_configs";
+	var p = @"D:\Github\GoBot\plugins\nonebot-plugin-maimaidx\tools\source\mai_configs";
 	var fs = Directory.GetFiles(p,"*.xml",SearchOption.AllDirectories);
 	
 	foreach(var f in fs){
