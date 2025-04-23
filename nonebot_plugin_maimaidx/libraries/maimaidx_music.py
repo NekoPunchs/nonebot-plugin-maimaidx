@@ -16,7 +16,7 @@ from .maimaidx_model import *
 from .tool import openfile, writefile
 
 
-LOAD_LOCAL = True
+LOAD_LOCAL = False
 
 def cross(
         checker: Union[List[str], List[float]],
