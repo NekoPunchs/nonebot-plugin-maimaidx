@@ -20,25 +20,13 @@
 ## 安装
 
 1. 安装 `nonebot-plugin-maimaidx`
-
-    - 使用 `nb-cli` 安装
-        ``` python
-        nb plugin install nonebot-plugin-maimaidx
-        ```
-    - 使用 `pip` 安装
-        ``` python
-        pip install nonebot-plugin-maimaidx
-        ```
-    - 使用源代码（不推荐） **需自行安装额外依赖**
+    - 使用源代码 **需自行安装额外依赖**
         ``` git
-        git clone https://github.com/Yuri-YuzuChaN/nonebot-plugin-maimaidx
+        git clone https://github.com/NekoPunchs/nonebot-plugin-maimaidx.git
         ```
-    
-2. 安装 `PhantomJS`，前往 https://phantomjs.org/download.html 下载对应平台支持
-3. 安装 `微软雅黑` 字体，解决使用 `ginfo` 指令字体不渲染，例如 `ubuntu`：`apt install fonts-wqy-microhei`
 
 > [!WARNING]
-> 未配置 `PhantomJS` 支持的Bot，在使用 `ginfo` 指令时会被强制关闭 Bot 进程
+> `ginfo` 指令已删除
 
 ## 配置
    
