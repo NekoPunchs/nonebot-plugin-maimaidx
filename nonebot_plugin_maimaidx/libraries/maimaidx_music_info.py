@@ -574,6 +574,7 @@ async def draw_plate_table(qqid: int, version: str, plan: str) -> Union[MessageS
             icon_is_rate = True
         elif plan == '神':
             play_filter = filter_ap
+            icon_is_rate = True
         elif plan == '者':
             play_filter = filter_clear
             icon_is_rate = True
@@ -602,7 +603,12 @@ async def draw_plate_table(qqid: int, version: str, plan: str) -> Union[MessageS
                 for i, play in enumerate(play_datas):
                     if not play_filter(i, play):
                         continue
-                    if i == count - 1:
+
+                    if count == 4 or include_rem:
+                        is_last = i == count - 1
+                    else:
+                        is_last = i == count - 2
+                    if is_last:
                         draw_util.draw_img_center(bg, complete_bg, xy)
                         complete_icon = draw_cache.get_complete_icon(play, icon_is_rate)
                         draw_util.draw_img_center(bg, complete_icon, (xy[0], xy[1] + const_fc_icon_y_offset))
