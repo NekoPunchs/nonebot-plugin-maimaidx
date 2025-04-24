@@ -423,7 +423,7 @@ def filter_clear(index: int, play: PlayInfoDefault) -> bool:
 def filter_fc(index: int, play: PlayInfoDefault) -> bool:
     if play is None:
         return False
-    return play.fc != ''
+    return len(play.fc) > 0
 
 
 def filter_acc(index: int, play: PlayInfoDefault) -> bool:
@@ -435,13 +435,13 @@ def filter_acc(index: int, play: PlayInfoDefault) -> bool:
 def filter_ap(index: int, play: PlayInfoDefault) -> bool:
     if play is None:
         return False
-    return play.fc == 'ap' or 'app'
+    return play.fc in ['ap', 'app']
 
 
 def filter_maimai(index: int, play: PlayInfoDefault) -> bool:
     if play is None:
         return False
-    return play.fc == 'fsd' or 'fdx' or 'fsdp' or 'fdxp'
+    return play.fc in ['fsd', 'fdx', 'fsdp', 'fdxp']
 
 
 async def draw_plate_table(qqid: int, version: str, plan: str) -> Union[MessageSegment, str]:
@@ -627,10 +627,14 @@ async def draw_plate_table(qqid: int, version: str, plan: str) -> Union[MessageS
         color.insert(0, (124, 129, 255, 255))
         for num in range(len(lv) + 1):
             if num == 0:
-                v = set.intersection(*lv[0:3])
-                v_count = len(v)
                 if include_rem:
-                    v_count -= len(remaster_list) - len(v.intersection(remaster_list))
+                    re_mas_count = len(set.intersection(*[*lv, remaster_list]))
+                    no_re_mas_list = set.difference(*[lv[0], remaster_list])
+                    no_re_mas_count = len(set.intersection(*[no_re_mas_list, *lv[1:4]]))
+                    v_count = re_mas_count + no_re_mas_count
+                else:
+                    v = set.intersection(*lv[0:4])
+                    v_count = len(v)
                 _v = f'{v_count}/{plate_total_num}'
 
             else:
