@@ -27,9 +27,9 @@ async def get_music():
     """
     bot启动时开始获取所有数据
     """
-    if maiconfig.maimaidxproberproxy:
+    if maiconfig.maimaidx_prober_proxy:
         log.info('正在使用代理服务器访问查分器')
-    if maiconfig.maimaidxaliasproxy:
+    if maiconfig.maimaidx_alias_proxy:
         log.info('正在使用代理服务器访问别名服务器')
     maiApi.load_token_proxy()
     log.info('正在获取maimai所有曲目信息')

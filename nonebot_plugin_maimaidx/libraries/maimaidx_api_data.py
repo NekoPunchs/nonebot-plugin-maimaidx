@@ -24,9 +24,9 @@ class MaimaiAPI:
         self.MaiAliasProxyAPI = None
 
     def load_token_proxy(self) -> None:
-        self.MaiProberProxyAPI = self.MaiProberAPI if not maiconfig.maimaidxproberproxy else self.MaiProxyAPI + '/maimaidxprober'
-        self.MaiAliasProxyAPI = self.MaiAliasAPI if not maiconfig.maimaidxaliasproxy else self.MaiProxyAPI + '/maimaidxaliases'
-        self.token = maiconfig.maimaidxtoken
+        self.MaiProberProxyAPI = self.MaiProberAPI if not maiconfig.maimaidx_prober_proxy else self.MaiProxyAPI + '/maimaidxprober'
+        self.MaiAliasProxyAPI = self.MaiAliasAPI if not maiconfig.maimaidx_alias_proxy else self.MaiProxyAPI + '/maimaidxaliases'
+        self.token = maiconfig.maimaidx_token
         if self.token:
             self.headers = {'developer-token': self.token}
 

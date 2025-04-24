@@ -5,7 +5,7 @@ from typing import Tuple, Union
 import numpy as np
 from PIL import Image, ImageDraw, ImageFont, ImageOps
 
-from ..config import SHANGGUMONO, Path, coverdir
+from ..config import SHANGGUMONO, Path, coverdir,maiconfig
 
 
 class DrawText:
@@ -18,50 +18,50 @@ class DrawText:
         return ImageFont.truetype(self._font, size).getbbox(text)
 
     def draw(
-        self,
-        pos_x: int,
-        pos_y: int,
-        size: int,
-        text: Union[str, int, float],
-        color: Tuple[int, int, int, int] = (255, 255, 255, 255),
-        anchor: str = 'lt',
-        stroke_width: int = 0,
-        stroke_fill: Tuple[int, int, int, int] = (0, 0, 0, 0),
-        multiline: bool = False
+            self,
+            pos_x: int,
+            pos_y: int,
+            size: int,
+            text: Union[str, int, float],
+            color: Tuple[int, int, int, int] = (255, 255, 255, 255),
+            anchor: str = 'lt',
+            stroke_width: int = 0,
+            stroke_fill: Tuple[int, int, int, int] = (0, 0, 0, 0),
+            multiline: bool = False
     ) -> None:
         font = ImageFont.truetype(self._font, size)
         if multiline:
             self._img.multiline_text(
-                (pos_x, pos_y), 
-                str(text), 
-                color, 
-                font, 
-                anchor, 
-                stroke_width=stroke_width, 
+                (pos_x, pos_y),
+                str(text),
+                color,
+                font,
+                anchor,
+                stroke_width=stroke_width,
                 stroke_fill=stroke_fill
             )
         else:
             self._img.text(
-                (pos_x, pos_y), 
-                str(text), 
-                color, 
-                font, 
-                anchor, 
-                stroke_width=stroke_width, 
+                (pos_x, pos_y),
+                str(text),
+                color,
+                font,
+                anchor,
+                stroke_width=stroke_width,
                 stroke_fill=stroke_fill
             )
 
 
 def tricolor_gradient(
-    width: int, 
-    height: int, 
-    color1: Tuple[int, int, int] = (124, 129, 255), 
-    color2: Tuple[int, int, int] = (193, 247, 225), 
-    color3: Tuple[int, int, int] = (255, 255, 255)
+        width: int,
+        height: int,
+        color1: Tuple[int, int, int] = (124, 129, 255),
+        color2: Tuple[int, int, int] = (193, 247, 225),
+        color3: Tuple[int, int, int] = (255, 255, 255)
 ) -> Image.Image:
     """绘制渐变色"""
     array = np.zeros((height, width, 3), dtype=np.uint8)
-    
+
     for y in range(height):
         if y < height * 0.4:
             ratio = y / (height * 0.4)
@@ -70,15 +70,15 @@ def tricolor_gradient(
             ratio = (y - height * 0.4) / (height * 0.6)
             color = (1 - ratio) * np.array(color2) + ratio * np.array(color3)
         array[y, :] = np.clip(color, 0, 255)
-    
+
     image = Image.fromarray(array).convert('RGBA')
     return image
 
 
 def rounded_corners(
-    image: Image.Image,
-    radius: int, 
-    corners: Tuple[bool, bool, bool, bool] = (False, False, False, False)
+        image: Image.Image,
+        radius: int,
+        corners: Tuple[bool, bool, bool, bool] = (False, False, False, False)
 ) -> Image.Image:
     """
     绘制圆角
@@ -149,10 +149,12 @@ def text_to_bytes_io(text: str) -> BytesIO:
     return bio
 
 
-def image_to_base64(img: Image.Image, format='JPEG') -> str:
+def image_to_base64(img: Image.Image, format='JPEG', quality: None | int = None) -> str:
+    if quality is None:
+        quality = maiconfig.maimaidx_image_quality
     output_buffer = BytesIO()
     if format == 'JPEG':
-        img.convert("RGB").save(output_buffer, format, quality=50)
+        img.convert("RGB").save(output_buffer, format, quality=quality)
     else:
         img.save(output_buffer, format, quality=50)
     byte_data = output_buffer.getvalue()

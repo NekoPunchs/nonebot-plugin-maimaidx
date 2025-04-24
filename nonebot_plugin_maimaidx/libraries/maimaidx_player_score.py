@@ -761,7 +761,7 @@ async def level_achievement_list_data(
     """
     try:
         data: Union[List[PlayInfoDefault], List[PlayInfoDev]] = []
-        if maiconfig.maimaidxtoken:
+        if maiconfig.maimaidx_token:
             obj = await maiApi.query_user_get_dev(qqid=qqid, username=username)
             data = obj.records
         else:

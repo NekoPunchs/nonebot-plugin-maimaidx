@@ -133,7 +133,7 @@ async def draw_music_play_data(qqid: int, music_id: str) -> Union[str, MessageSe
     """
     try:
         diff: List[Union[None, PlayInfoDev, PlayInfoDefault]]
-        if maiconfig.maimaidxtoken:
+        if maiconfig.maimaidx_token:
             data = await maiApi.query_user_post_dev(qqid=qqid, music_id=music_id)
             if not data:
                 raise MusicNotPlayError
