@@ -574,7 +574,6 @@ async def draw_plate_table(qqid: int, version: str, plan: str) -> Union[MessageS
             icon_is_rate = True
         elif plan == '神':
             play_filter = filter_ap
-            icon_is_rate = True
         elif plan == '者':
             play_filter = filter_clear
             icon_is_rate = True
@@ -625,6 +624,7 @@ async def draw_plate_table(qqid: int, version: str, plan: str) -> Union[MessageS
 
         color = ScoreBaseImage.id_color.copy()
         color.insert(0, (124, 129, 255, 255))
+        remaster_set = lv[4].intersection(remaster_list)
         for num in range(len(lv) + 1):
             if num == 0:
                 if include_rem:
@@ -636,10 +636,11 @@ async def draw_plate_table(qqid: int, version: str, plan: str) -> Union[MessageS
                     v = set.intersection(*lv[0:4])
                     v_count = len(v)
                 _v = f'{v_count}/{plate_total_num}'
-
+            elif num == 5:
+                _v = len(remaster_set)
             else:
                 _v = len(lv[num - 1])
-            if include_rem and num == 5 and len(lv[4].intersection(remaster_list)) == len(remaster_list):
+            if include_rem and num == 5 and len(remaster_set) == len(remaster_list):
                 mr.draw(390 + 200 * num, 270, 35, '完成', color[num], 'rm', 4, (255, 255, 255, 255))
             elif _v == plate_total_num:
                 mr.draw(390 + 200 * num, 270, 35, '完成', color[num], 'rm', 4, (255, 255, 255, 255))
