@@ -33,7 +33,7 @@
 1. 下载静态资源文件，将该压缩文件解压，且解压完为文件夹 `static`
    - [AList网盘](https://shadowdr.cn/disk/maimaiDX)
 
-2. 在 `.env` 文件中配置静态文件绝对路径 `MAIMAIDXPATH`
+2. 在 `.env` 文件中配置静态文件绝对路径 `MAIMAIDX_PATH`
 
     ``` dotenv
     MAIMAIDX_PATH=path.to.static
@@ -44,13 +44,13 @@
     MAIMAIDX_PATH=/root/static
     ```
 
-3. 可选，如果拥有 `diving-fish 查分器` 的开发者 `Token`，请在 `.env` 文件中配置 `MAIMAIDXTOKEN`
+3. 可选，如果拥有 `diving-fish 查分器` 的开发者 `Token`，请在 `.env` 文件中配置 `MAIMAIDX_TOKEN`
    
     ``` dotenv
     MAIMAIDX_TOKEN=MAIMAITOKEN
     ```
 
-4. 可选，如果你的服务器或主机不能顺利流畅的访问查分器和别名库的API，请在 `.env` 文件中配置代理。均为香港服务器代理中转，例如你的服务器访问查分器很困难，请设置 `MAIMAIDXPROBERPROXY` 为 `ture`，别名库同理
+4. 可选，如果你的服务器或主机不能顺利流畅的访问查分器和别名库的API，请在 `.env` 文件中配置代理。均为香港服务器代理中转，例如你的服务器访问查分器很困难，请设置 `MAIMAIDX_PROBER_PROXY` 为 `ture`，别名库同理
 
     ``` dotenv
     # 查分器代理，推荐境外服务器使用
