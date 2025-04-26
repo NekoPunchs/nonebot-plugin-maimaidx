@@ -460,6 +460,7 @@ async def draw_plate_table(qqid: int, version: str, plan: str) -> Union[MessageS
 
     try:
         plan = str_util.plate_plan_conv(plan)
+        version = str_util.plate_version_conv(version)
 
         if version in platecn:
             version = platecn[version]
@@ -485,8 +486,7 @@ async def draw_plate_table(qqid: int, version: str, plan: str) -> Union[MessageS
             ver = [x for x in plate_to_version.values()]
             _ver = '舞'
         else:
-            ver = [plate_to_version[version]]
-            _ver = version
+            return MessageSegment.text(f"暂不支持查询「{version}」系牌子")
 
         music_id_list = mai.total_plate_id_list[_ver]
         music_group = mai.total_list.by_id_list(music_id_list)
@@ -551,7 +551,7 @@ async def draw_plate_table(qqid: int, version: str, plan: str) -> Union[MessageS
 
         complete_bg = Image.open(maimaidir / 'complete_bg_2.png')
 
-        bg = Image.open(platedir / f'{'舞' if version == '霸' else version}.png')
+        bg = Image.open(platedir / f'{'舞' if version == '霸' else str_util.sdgb_plate_conv(version)}.png')
         draw = ImageDraw.Draw(bg)
         tr = DrawText(draw, TBFONT)
         mr = DrawText(draw, SIYUAN)
@@ -624,7 +624,6 @@ async def draw_plate_table(qqid: int, version: str, plan: str) -> Union[MessageS
 
         color = ScoreBaseImage.id_color.copy()
         color.insert(0, (124, 129, 255, 255))
-        remaster_set = lv[4].intersection(remaster_list)
         for num in range(len(lv) + 1):
             if num == 0:
                 if include_rem:
@@ -637,12 +636,10 @@ async def draw_plate_table(qqid: int, version: str, plan: str) -> Union[MessageS
                     v_count = len(v)
                 _v = f'{v_count}/{plate_total_num}'
             elif num == 5:
-                _v = len(remaster_set)
+                _v = len(lv[4].intersection(remaster_list))
             else:
                 _v = len(lv[num - 1])
-            if include_rem and num == 5 and len(remaster_set) == len(remaster_list):
-                mr.draw(390 + 200 * num, 270, 35, '完成', color[num], 'rm', 4, (255, 255, 255, 255))
-            elif _v == plate_total_num:
+            if _v == plate_total_num or (include_rem and num == 5 and _v == len(remaster_list)):
                 mr.draw(390 + 200 * num, 270, 35, '完成', color[num], 'rm', 4, (255, 255, 255, 255))
             else:
                 tr.draw(390 + 200 * num, 270, 40, _v, color[num], 'rm', 4, (255, 255, 255, 255))
