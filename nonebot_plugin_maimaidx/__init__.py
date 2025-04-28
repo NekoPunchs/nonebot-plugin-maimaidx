@@ -41,5 +41,5 @@ async def get_music():
     log.success('maimai数据获取完成')
 
 
-scheduler.add_job(alias_apply_status, 'interval', hour=24)
-scheduler.add_job(data_update_daily, 'cron', hour=24)
+scheduler.add_job(alias_apply_status, 'cron', hour=0)
+scheduler.add_job(data_update_daily, 'cron', hour=0)

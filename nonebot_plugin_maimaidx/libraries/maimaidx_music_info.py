@@ -485,6 +485,9 @@ async def draw_plate_table(qqid: int, version: str, plan: str) -> Union[MessageS
         elif version in ['舞', '霸']:
             ver = [x for x in plate_to_version.values()]
             _ver = '舞'
+        elif version in plate_to_version.keys():
+            ver = [plate_to_version[version]]
+            _ver = version
         else:
             return MessageSegment.text(f"暂不支持查询「{version}」系牌子")
 
